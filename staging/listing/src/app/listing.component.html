@@ -1,0 +1,183 @@
+<div class="main_container">
+    <div class="topBannerAd">
+        <img src="images/banner_ad2.jpg" alt="">
+    </div>
+    <div class="dashboardWrapper listingPageWrapper">
+    	<span class="dashboardNavIcon" id="dashboardNavIcon"><i class="fa fa-bars" aria-hidden="true"></i></span>  
+        <div class="dashboardLeftPanel listingLeftPanel">
+        	<h2 class="title">Refine <span>Options</span></h2>
+        	<div class="row vspace20">
+            	<div class="col-xs-12 filterPanelHd">
+                	Price <span class="pull-right"><a href="javascript:void(0);" data-toggle="collapse" data-target="#filterPanel1" class="arrowBtn"></a></span>
+               	</div>
+            	<div class="col-xs-12 filterPanelDetails collapse in" id="filterPanel1">
+            		<input id="rangeSlider1" type="text" value="" data-slider-min="0" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,500]"/>
+        		</div>
+            </div>
+            
+            <div class="row vspace20">
+            	<div class="col-xs-12 filterPanelHd">
+                	Board Basic <span class="pull-right"><input type='checkbox' id='chk-all-1' name='chk-all-1' value="Select All" class='pseudo-checkbox sr-only'/><label for='chk-all-1' class='fancy-checkbox-label'> Select All</label> <a href="javascript:void(0);" data-toggle="collapse" data-target="#filterPanel2" class="arrowBtn"></a></span>
+               	</div>
+            	<div class="col-xs-12 filterPanelDetails collapse in" id="filterPanel2">
+                	<div class="row" *ngFor="let item of boardList">
+                        <div class="col-xs-7">
+                        	<input type='checkbox' id='{{item.boardId}}' value="{{item.boardName}}" class='pseudo-checkbox sr-only'/><label for='{{item.boardId}}' class='fancy-checkbox-label'> {{item.boardName}}</label>
+                       	</div>
+                        <div class="col-xs-5 right">from {{item.boardPrice}}</div>
+        			</div>
+                </div>
+            </div>
+            
+            <div class="row vspace20">
+            	<div class="col-xs-12 filterPanelHd">
+                	Stars <span class="pull-right"><input type='checkbox' id='chk-all-2' name='chk-all-2' value="Select All" class='pseudo-checkbox sr-only'/><label for='chk-all-2' class='fancy-checkbox-label'> Select All</label> <a href="javascript:void(0);" data-toggle="collapse" data-target="#filterPanel3" class="arrowBtn"></a></span>
+               	</div>
+            	<div class="col-xs-12 filterPanelDetails collapse in" id="filterPanel3">
+            		<div class="row" *ngFor="let item of starList">
+                        <div class="col-xs-7">
+                        	<input type='checkbox' id='{{item.starId}}' value="{{item.starId}}" class='pseudo-checkbox sr-only'/>
+							<label for='{{item.starId}}' class='fancy-checkbox-label'> 
+								<i *ngFor="let subitem of item.starClass" class="fa {{subitem}}"></i> 
+							</label>
+                       	</div>
+                        <div class="col-xs-5 right">from {{item.starPrice}}</div>
+        			</div>                    
+        		</div>
+            </div>
+            
+            <div class="row vspace20">
+            	<div class="col-xs-12 filterPanelHd">
+                	Guest Rating <span class="pull-right"><a href="javascript:void(0);" data-toggle="collapse" data-target="#filterPanel4" class="arrowBtn"></a></span>
+               	</div>
+            	<div class="col-xs-12 filterPanelDetails collapse in" id="filterPanel4">
+            		<input id="rangeSlider2" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="90"/>                   
+					<input type='checkbox' id='unknwn-rate' value="Unknown Rating" class='pseudo-checkbox sr-only'/><label for='unknwn-rate' class='fancy-checkbox-label'> Include unknown guest rating</label>
+        		</div>
+            </div>
+			
+			<div class="col-xs-12 moreOptionsWrapper" id="moreOptionsWrapper">
+				<div class="row vspace20">
+					<div class="col-xs-12 filterPanelHd">
+						Resort <span class="pull-right"><a href="javascript:void(0);" data-toggle="collapse" data-target="#filterPanel5" class="arrowBtn"></a></span>
+					</div>
+					<div class="col-xs-12 filterPanelDetails collapse in" id="filterPanel5">
+						<div class="row"><div class="col-xs-7"><label>Resort 1</label></div></div>
+						<div class="row"><div class="col-xs-7"><label>Resort 2</label></div></div>
+						<div class="row"><div class="col-xs-7"><label>Resort 3</label></div></div>
+					</div>
+				</div>
+			</div>
+            
+            <div class="row vspace20 filterPanelDetails">
+            	<div class="col-xs-12">
+					<a href="javascript:void(0);" class="moreOpt" id="moreOpt">More Options</a>
+					<a href="javascript:void(0);" class="moreOpt" id="hideOpt">Less Options</a>
+				</div>
+            </div>                    
+        </div>
+        <div class="dashboardRightPanel listingRightPanel">
+        	<ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active">Hotel</li>
+            </ol>        
+        
+        	<h2 class="listingTitle">Hotels available at <span>{{hotelLoc}}</span></h2>
+            <h3 class="listingSubTitle">{{startDt}} - {{endDt}} <a href="javascript:void(0);">Change search</a></h3>
+            <div class="listingTopDet">Flexible dates…</div>
+            <div class="listingScheduleRow">
+            	<div class="scheduleInnrWrapper">
+                	<div class="scheduleBlock center">
+                    	<i class="fa fa-calendar" aria-hidden="true"></i><br />Fri 16 Dec<br />No deals found 
+                        <div class="activeTop">Departing on</div> 
+                    </div>
+                    <div class="scheduleBlock center">
+                    	<i class="fa fa-calendar" aria-hidden="true"></i><br />Sat 17 Dec<br />No deals found 
+                        <div class="activeTop">Departing on</div> 
+                    </div>
+                    <div class="scheduleBlock center">
+                    	<i class="fa fa-calendar" aria-hidden="true"></i><br />Sun 18 Dec<br />No deals found 
+                        <div class="activeTop">Departing on</div> 
+                    </div>
+                    <div class="scheduleBlock center">
+                    	<i class="fa fa-calendar" aria-hidden="true"></i><br />Mon 19 Dec<br />No deals found
+                        <div class="activeTop">Departing on</div>  
+                    </div>
+                    <div class="scheduleBlock center active">
+                    	<i class="fa fa-calendar" aria-hidden="true"></i><br />Tue 20 Dec<br />&pound;453pp
+                        <div class="activeTop">Departing on</div> 
+                        <div class="activeTop">Departing on</div> 
+                    </div>
+                    <div class="scheduleBlock center">
+                    	<i class="fa fa-calendar" aria-hidden="true"></i><br />Wed 21 Dec<br />No deals found
+                        <div class="activeTop">Departing on</div>  
+                    </div>
+                    <div class="scheduleBlock center">
+                    	<i class="fa fa-calendar" aria-hidden="true"></i><br />Thu 22 Dec<br />&pound;638pp
+                        <div class="activeTop">Departing on</div> 
+                    </div>
+                </div>
+            </div>
+            <div class="listingFilterPanel">
+            	<div class="col-lg-5 col-xs-12">
+                	{{propVal}} properties with {{dealVal}} deals <a class="linkShowAll" href="javascipt:void(0);">Show All</a>
+                </div>
+                <div class="col-lg-7 col-xs-12 right mapView">
+                	<a href="javascript:void(0);"><i class="fa fa-map-marker" aria-hidden="true"></i> Map View</a>
+                    <select class="form-control">
+                        <option *ngFor="let priceVal of priceList" [value]="priceVal">{{priceVal}}</option>
+                    </select>
+                    <select class="form-control">
+                        <option *ngFor="let sortVal of sortList" [value]="sortVal">{{sortVal}}</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="row savedSearchList">
+                <div class="savedSearchListCont" *ngFor="let item of searchList">
+                    <div class="corner_large"><img src={{item.compLogo}} alt=""></div>
+                    <div class="row">
+                        <h2 class="favName">{{item.locName}}</h2>
+                    </div>
+                    <div class="savedSearchWrapper">
+                        <div class="savedSearchBlock">
+                            <div class="favImg"><img src={{item.locImg}} alt=""></div>
+                        </div>
+                        <div class="savedSearchBlock">
+                            <h2 class="favLoc"><i class="fa fa-map-marker" aria-hidden="true"></i> {{item.location}}</h2>
+                            <i *ngFor="let subitem of item.rank" class="fa {{subitem}}"></i>							
+                            <h3 class="rvwDet"><span class="dot"></span> {{item.rankGrade}} {{item.rankVal}}% ({{item.reviews}} Reviews)</h3>
+                            <div class="moreDet">More deals available from {{item.moreDealsFrom}}</div>
+                        </div>
+                        <div class="savedSearchBlock">
+                            <ul class="savedSearchOptions">
+                            	<li *ngFor="let subitem of item.optionsList">{{subitem}}</li>                                
+                            </ul>
+                        </div>
+                        <div class="savedSearchBlock">
+                            <span class="favTag">&pound;{{item.priceVal}}</span> <span class="favUnit">pp </span>
+                            <span class="favTotalUnit">&pound;{{item.priceTotal}} total</span>
+                            <a href="javascript:void(0);" class="viewDeal">View Deal</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <span class="compareDeals"><a href="javascript:void(0);" data-toggle="collapse" [attr.data-target]="'#' + item.compareId" >Compare Deals <i class="fa fa-angle-down" aria-hidden="true"></i></a></span>
+                    </div>
+                    <div class="compareDealsDetails collapse"   id="{{item.compareId}}">
+                        <div class="dealsDetRow" *ngFor="let item of item.COMPARELIST">
+                        	<div class="dealsDetCol"><img src={{item.compLogo}} alt=""></div>
+                        	<div class="dealsDetCol" *ngFor="let subitem of item.dealsDet">{{subitem}}</div>
+                            <div class="dealsDetCol"><a class="viewDeal" href="javascript:void(0);">View Deal</a></div>
+                        </div>
+						
+                    </div>
+                </div>                                                    
+            </div>                                                                             
+        </div>               
+    </div>
+    <div class="bannerAdWrapper">
+        <img src="images/banner_ad.jpg" alt="">
+    </div>
+</div>
+<div class="bannerAdBottom center"><img src="../images/banner_ad3.jpg" alt="" /></div> 
+	

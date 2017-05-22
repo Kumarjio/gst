@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<div>
+<form method="post" action="#mc_signup" id="mc_signup_form" class="footer-subscribe-form"><input type="hidden" id="mc_submit_type" name="mc_submit_type" value="js">
+      <input type="hidden" name="mcsf_action" value="mc_submit_signup_form"><input type="hidden" id="_mc_submit_signup_form_nonce" name="_mc_submit_signup_form_nonce" value="ee7a842286">
+	<div class="footer-subscribe-text col-sm-7">
+		<h6>Signup to get the latest deals delivered to your inbox!</h6>
+		<p></p>
+	</div>
+	<div class="col-sm-5">
+	<div class="updated" id="mc_message">
+		</div>
+		<input type="text" size="18" placeholder="Enter Your Email" name="mc_mv_EMAIL" id="mc_mv_EMAIL" class="footer-subscribe-email">
+    <button class="footer-subscribe-submit" type="submit" name="mc_signup_submit" id="mc_signup_submit">Join </button>
+	</div>
+	</form>
+
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+	/* <![CDATA[ */
+var mailchimpSF = {"ajax_url":"https:\/\/www.creativedigitall.com\/"};
+/* ]]> */
+	/* Form submission functions for the MailChimp Widget */
+(function($){
+	$(function($) {
+		// Change our submit type from HTML (default) to JS
+		$('#mc_submit_type').val('js');
+
+		// Attach our form submitter action
+		$('#mc_signup_form').ajaxForm({
+			url: "//GoSearchTravel.us14.list-manage.com/subscribe/post?u=ad32be7a1c51b08d314a54197&amp;id=9742370da5",
+			type: 'POST',
+			dataType: 'text',
+			beforeSubmit: mc_beforeForm,
+			success: mc_success
+		});
+	});
+
+	function mc_beforeForm(){
+		// Disable the submit button
+		$('#mc_signup_submit').addClass("mc-loading");
+		$('#mc_signup_submit').attr("disabled","disabled");
+		$('#mc_signup_submit').html("");
+
+	}
+	function mc_success(data){
+		// Re-enable the submit button
+		$('#mc_signup_submit').removeAttr("disabled");
+		$('#mc_signup_submit').html("join");
+		$('#mc_signup_submit').removeClass("mc-loading");
+
+
+		// Put the response in the message div
+		$('#mc_message').html(data);
+
+
+
+		// See if we're successful, if so, wipe the fields
+		var reg = new RegExp("class='mc_success_msg'", 'i');
+		if (reg.test(data)){
+			$('#mc_signup_form').each(function(){
+				if ($('.mc_success_msg') != ""){
+					$('.mc_success_msg').fadeOut(7000);
+				} else {
+					$('.mc_success_msg').show();
+				}
+				this.reset();
+			});
+			$('#mc_submit_type').val('js');
+		}
+		$.scrollTo('#mc_signup_form', {offset: {top: -28}});
+	}
+})(jQuery);
+
+
+</script>
+</body>
+</html>

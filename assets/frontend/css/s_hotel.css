@@ -1,0 +1,582 @@
+.img-travelpayout{
+	height: 28px;
+	width: 105px;
+}
+/* =======================================================
+*
+* map-wrapper
+*
+* ======================================================= */
+.map-wrapper .title{
+	margin-bottom:5px;
+}
+.map-wrapper .m-rating{
+	margin-bottom:5px;
+}
+
+
+/* =======================================================
+*
+* selectpicker
+*
+* ======================================================= */
+
+.bootstrap-select{
+	width:100% !important;
+}
+.bootstrap-select .dropdown-toggle{
+	padding:6px 25px;
+	border-radius: 0;
+	border: none;
+}
+
+.btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle
+.bootstrap-select .dropdown-toggle:hover,
+.bootstrap-select .dropdown-toggle:focus,
+.bootstrap-select .dropdown-toggle{
+	background:#FFF !important;
+	color:#000 !important;
+	box-shadow:none !important;
+}
+
+@media (max-width: 768px) {
+.bootstrap-select{
+	width:55% !important;
+	float:right !important;
+}
+	
+}
+
+
+/* =======================================================
+*
+* search-form-wp
+*
+* ======================================================= */
+
+.rating-container .rating-stars {
+	color:#f78536;
+}
+
+.search-form-wp .row{
+	margin:0;
+}
+
+.search-form-wp .margin-bottom-10{
+	padding:0 2px;
+}
+
+.search-form-wp .slider.slider-horizontal .slider-track {
+  height: 4px;
+  margin-top: -4px;
+}
+
+.search-form-wp .slider-track{
+	background-image: linear-gradient(to bottom, #756980 0px, #8d8198 100%);
+/*	background-color: #675B72 !important;*/
+}
+.search-form-wp .slider-handle{
+	height:15px;
+	width:15px;
+	background-color: #FFF;
+	background-image: linear-gradient(to bottom, #FFF 0px, #FFF 100%);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.search-form-wp .slider-selection{
+	background:#f78536 ;
+}
+
+
+
+/* =======================================================
+*
+* flight-item
+*
+* ======================================================= */
+.flight-item {
+  padding:10px;
+}
+
+.flight-item:hover{
+  background:#FAFAFA !important;
+}
+
+.flight-item .item-media {
+  width: 35%;
+}
+
+.flight-item .item-body {
+  width: 48%;
+  padding: 0px 10px;
+}
+
+
+.flight-item .item-price-more {
+  margin: 0;
+  padding: 0 10px;
+  position: relative;
+  width: 17%;
+}
+
+
+.flight-item .item-media .image-cover {
+  padding-top: 0px;
+/*  padding-left: 7px;*/
+}
+
+.flight-item .item-media .image-cover img {
+  height: 215px;
+}
+
+.flight-item .item-price-more{
+	min-height:218px;
+}
+.flight-item .ratings-data  .wishlist{
+	font-size: 20px;
+	text-align: right;
+}
+
+.flight-item .ratings-data  .rating{
+	background:rgba(0, 0, 0, 0.1);
+	text-align: left;
+	border-radius:2px;
+	padding:5px;
+	font-size:13px;
+}
+.flight-item .ratings-data  .rating .rating-count{
+	font-weight:bold;
+	text-align:right;
+	float:right;
+	color:#000;
+}
+
+.flight-item .ratings-data  .rating a{
+	color:#333;
+}
+.flight-item .ratings-data  .review{
+	text-align:right;
+	font-size:13px;
+	color:#000;
+}
+.flight-item .item-price-more .price-bottom{
+	position:absolute;
+	bottom:4px;
+	width:101px;
+}
+
+.flight-item .item-price-more .price-bottom .btn{
+	padding:4px;
+	margin-top:3px;
+}
+
+.flight-item .item-price-more .price .amount{
+    color: #000;
+	font-size:18px;
+	text-align:right;
+}
+
+
+.search-form-wp .search-btns{
+	margin-top:30px;
+	padding:0 5px;
+}
+
+
+@media (max-width: 768px) {
+	.search-form-wp .search-btns{
+		margin-top:0;
+	}
+
+	.search-form-wp .input-group{
+		  float: right;
+		  width: 55%;
+	}
+
+	.search-form-wp  form .btn{
+		padding:4px;
+		display:block;
+		width:100%;
+		margin-right:0 !important;
+	}
+
+	.search-form-wp {
+		padding-top:10px;
+	}
+	.search-form-wp label{
+		width:40%;
+	}
+/*	.search-form-wp select, .search-form-wp  input[type="text"] {
+		  float: right;
+		  width: 55%;
+	}*/
+	.search-form-wp  .adult-select{
+	  float: right;
+	  width: 55%;
+	}
+
+}
+.search-form-wp .search-btns .btn-sys{
+	padding:4px 11px;
+}
+
+.search-form-wp .search-btns .btn{
+	padding:4px 6px;
+}
+
+
+
+
+
+.search-contents {
+	padding-left:15px !important;
+	padding-right:15px !important;
+}
+.search-contents .col-md-3,
+.search-contents .col-md-5,
+.search-contents .col-md-6,
+.search-contents .col-md-7,
+.search-contents .col-md-9{
+	padding-left:5px;
+	padding-right:5px;
+}
+
+.result-wrapper{
+	padding-right:1px !important;
+}
+
+.map-wrapper{
+	padding-left:1px !important;
+	padding-right:0px !important;
+}
+.flight-item, .trip-item, .attraction-item, .hotel-item {
+  margin-bottom: 4px;
+}
+
+.search-container {
+/*  padding:10px;*/
+  z-index:1;
+}
+
+.filter-wrapper{
+  padding:10px 0;
+	
+}
+
+.search-container .side-c {
+  margin-bottom: 0px;
+}
+.search-container .side-c .l-title{
+	color:#FFF;
+	font-size:12px;
+	margin-bottom:0
+}
+
+.search-container .case-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+	color:#FFF;
+}
+.search-container .case-header .items {
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+	font-size:12px;
+	
+}
+
+
+
+
+.sidebox-container{
+	background:#251435;
+	color:#FFF;
+}
+.search-container .side-c .l-title,
+.sidebox-container .side-c .l-title {
+	color:#FFF;
+	font-size:12px;
+}
+
+
+.search-container .side-c {
+  margin-bottom: 0px;
+}
+
+.leftBanner, .rightBanner {
+  position: absolute !important;
+  top: 240px !important;
+}
+
+.search-wrapper .filter-page__content{
+	min-height:670px;
+}
+.rating-sm {
+  font-size:25px;
+}
+
+.ajax-loading{
+	display:none;
+	text-align:center;
+}
+
+.search-form-wp{
+/*	padding:0 20px ;*/
+/*	background:#f78536;*/
+	position:fixed;
+	width:100%;
+	z-index:1;
+}
+
+.search-form-wp label{
+	color:#000;
+	font-weight:normal;
+	font-size:14px;
+}
+.search-form-wp input[type="text"] {
+  background: #FFF;
+  border: none;
+  box-shadow: none;
+  font-weight: normal;
+  font-size: 13px;
+  padding: 5px 10px !important;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  color: #000 !important;
+  height:32px;  
+}
+
+.search-form-wp div.adult-select {
+	background: #FFF;
+}
+
+.search-form-wp .adult-select span {
+  padding: 5px 4px !important;
+}
+
+.search-form-wp .adult-select > span {
+  background: transparent none repeat scroll 0 0;
+  color: #000 !important;
+}
+
+
+.search-wrapper .search-contents{
+	padding-top:150px;
+}
+
+
+@media screen and (max-width: 991px) {
+.search-form-wp{
+	position:inherit;
+	width:100%;
+}
+
+/*.search-wrapper .search-contents{
+	padding-top:0px;
+}
+*/
+}
+
+
+
+
+
+
+
+
+.margin-bottom-10{
+	margin-bottom:10px;
+}
+.glyphicon { margin-right:5px; }
+.thumbnail
+{
+    margin-bottom: 20px;
+    padding: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.item.list-group-item
+{
+    float: none;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.item.list-group-item:nth-of-type(odd):hover,.item.list-group-item:hover
+{
+    background: #428bca;
+}
+
+.item.list-group-item .list-group-image
+{
+    margin-right: 10px;
+}
+.item.list-group-item .thumbnail
+{
+    margin-bottom: 0px;
+}
+.item.list-group-item .caption
+{
+    padding: 9px 9px 0px 9px;
+}
+.item.list-group-item:nth-of-type(odd)
+{
+    background: #eeeeee;
+}
+
+.item.list-group-item:before, .item.list-group-item:after
+{
+    display: table;
+    content: " ";
+}
+
+.item.list-group-item img
+{
+    float: left;
+}
+.item.list-group-item:after
+{
+    clear: both;
+}
+.list-group-item-text
+{
+    margin: 0 0 11px;
+}
+
+
+@media (max-width: 768px) {
+
+	.search-wrapper .search-contents{
+		padding-top:10px;
+	}
+
+
+	.flight-item .item-media,
+	.flight-item .item-body,
+	.flight-item .item-price-more{
+		float:none;
+		width:100%;
+	}
+	.flight-item .item-price-more{
+		text-align:center;
+	}
+	.flight-item .item-price-more .btn{
+		width: 100%;
+	}
+	
+	.flight-item .item-price-more:after{
+		border-left: none;
+	}
+	
+	.flight-item .item-media .image-cover{
+		text-align:center;
+	
+	}
+	.flight-item .item-media .image-cover img {
+		width: 50%;
+		height: 105px;
+	}
+	
+
+}
+
+/* =======================================================
+*
+* star-rating
+*
+* ======================================================= */
+
+.clear-rating-active:hover{
+	color:#FF9900;
+}
+
+
+
+/* =======================================================
+*
+* passenger
+*
+* ======================================================= */
+
+.passenger {
+/*	background: #fff none repeat scroll 0 0;*/
+	color: #FFF;
+	padding: 3px 0px;
+	margin-top:10px;
+}
+.passenger a{
+	color: #FFF;
+	width:100%;
+}
+
+.passenger .bootstrap-touchspin{
+	float:right;
+	width:26%;
+}
+.passenger .bootstrap-touchspin .btn{
+	border:none !important;
+	border-radius:0;
+}
+.passenger .mega-dropdown-menu{
+	min-width:260px;
+	border-radius:0;
+	padding:10px;
+}
+
+.bootstrap-touchspin input[type="text"]{
+	padding:5px 8px !important;
+	height:30px !important;
+}
+
+
+.passenger .child-age-content,
+.passenger .child-age-content:before,
+.passenger .child-age-content:after{
+	clear:both;
+}
+
+.passenger .child-box-content{
+	border-top:1px solid#CCC;
+	padding-top:10px;
+}
+.passenger .child-box-content .child-age-content{
+	display:none;
+}
+
+.passenger  .child-box-content .child-age-content.active{
+	display:block;
+}
+
+
+@media (max-width: 768px) {
+	.passenger {
+		float:right;
+		width:55%;
+	}
+}
+
+
+
+.hotels-toolbar-filter:before {
+  background-color: rgba(255, 255, 255, 0.1);
+  bottom: 5px;
+  content: "";
+  display: block;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 8px;
+  width: 1px;
+  z-index: 1;
+}

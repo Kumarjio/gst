@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>GoSearchTravel.com - Dream, Explore, Compare, GO!</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="description" content="With GoSearchTravel, Compare cheap flights and Hotels, Hajj Packages, Umrah Packages, Travel Insuranca and Cruises. Special offers for flights and hotels. ">
+<meta name="keywords" content="special offers, compare cheap flights, compare cheap hotels, popular destinations, holidays, bangkok, dubai, shanghai, lahore, countries, flights to Europe, flights to European countries, flights to Asia, flights to America, flights to Australia, flights to Africa, Hajj Packages, Umrah Packages, Compare Hajj Pacakges, Compare Umrah Packages, Cruises, Holiday Insurance, Travel Insurance" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-select.min.css" rel="stylesheet">
+<link href="css/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+<link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+<link href="css/lightslider.min.css" rel="stylesheet">
+<link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="css/fonts.css" rel="stylesheet">
+<link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+<header>
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container"> <a class="navbar-brand" href="index.html"> <img src="images/gst_logo.png" alt="Go Search Travel" id="logo_default" width="106" height="96"> <img src="images/gst_logo_small.png" alt="Go Search Travel" id="logo_small"> </a>
+      <ul class="nav navbar-nav">
+        <li><a href="javascript:void(0);">Holidays</a></li>
+        <li><a href="javascript:void(0);">Flight &amp; Hotel</a></li>
+        <li><a href="javascript:void(0);">Flights</a></li>
+        <li><a href="javascript:void(0);">Hotels</a></li>
+        <li><a href="javascript:void(0);">Car Hire</a></li>
+        <li><a href="javascript:void(0);">Hajj</a></li>
+        <li><a href="javascript:void(0);">Umrah</a></li>
+        <li><a href="javascript:void(0);">Travel Insurance</a></li>
+      </ul>
+      <div class="pull-right login-sec" id="userBtn"> <a href="javascript:void(0);"><img src="images/user_icon.png" alt=""></a> </div>
+      <div class="userBlock center" id="loginBlock">
+        <h2 class="popupTitle">Log In</h2>
+        <h3 class="popupSubTitle">Log in to your account</h3>
+        <form>
+          <div class="col-xs-12">
+            <input type="email" placeholder="Email Id" class="form-control email" required>
+          </div>
+          <div class="col-xs-12">
+            <input type="password" placeholder="Password" class="form-control password" required>
+          </div>
+          <div class="col-xs-12">
+            <input type="submit" value="Login" class="submitBtn">
+          </div>
+          <div class="col-xs-12"> <a href="javascript:void(0);" class="forgotPass" id="forgotPass">Forgot Password?</a> </div>
+          <div class="col-xs-12">
+            <div class="or">Or</div>
+          </div>
+          <div class="col-xs-12"> <a href="javascript:void(0);" class="facebookLogin"><span class="pull-left"><i class="fa fa-facebook" aria-hidden="true"></i></span>Connect With Facebook</a> </div>
+          <div class="col-xs-12"> <a href="javascript:void(0);" class="link" id="signUp">Sign Up</a> </div>
+        </form>
+        <span class="closePop" id="closeLoginPop"><img src="images/close_pop.png" alt=""></span> </div>
+      <div class="userBlock center" id="signupBlock">
+        <h2 class="popupTitle">Sign Up</h2>
+        <h3 class="popupSubTitle">Sign Up to your account</h3>
+        <form>
+          <div class="col-xs-12">
+            <input type="text" placeholder="Name" class="form-control name" required>
+          </div>
+          <div class="col-xs-12">
+            <input type="email" placeholder="Email Id" class="form-control email" required>
+          </div>
+          <div class="col-xs-12">
+            <input type="password" placeholder="Password" class="form-control password" required>
+          </div>
+          <div class="col-xs-12">
+            <input type="password" placeholder="Confirm Password" class="form-control password" required>
+          </div>
+          <div class="col-xs-12">
+            <input type="submit" value="Sign Up" class="submitBtn">
+          </div>
+          <div class="col-xs-12">
+            <div class="or">Or</div>
+          </div>
+          <div class="col-xs-12"> <a href="javascript:void(0);" class="facebookLogin"><span class="pull-left"><i class="fa fa-facebook" aria-hidden="true"></i></span>Connect With Facebook</a> </div>
+          <div class="col-xs-12"> Already Have an Account? <a href="javascript:void(0);" class="link" id="logIn">Log In</a> </div>
+        </form>
+        <span class="closePop" id="closeSignupPop"><img src="images/close_pop.png" alt=""></span> </div>
+      <div class="userBlock center" id="forgotpasswordBlock">
+        <h2 class="popupTitle">Forgot Password</h2>
+        <h3 class="popupSubTitle">Enter your registered email, we will send a password reset link to change your password.</h3>
+        <form>
+          <div class="col-xs-12">
+            <input type="email" placeholder="Email Id" class="form-control email" required>
+          </div>
+          <div class="col-xs-12">
+            <input type="submit" value="Submit" class="submitBtn">
+          </div>
+        </form>
+        <span class="closePop" id="closeForgotpasswordPop"><img src="images/close_pop.png" alt=""></span> </div>
+    </div>
+  </nav>
+</header>
+<div class="main_container">
+  <section class="banner">
+    <div id="bannerCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="item active"> <img src="images/banner_blog.jpg" alt=""> </div>
+        <div class="carousel-caption">
+          <h2>Dream, Explore, Compare - <span>GO!</span></h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="blogWrapper vspace70">
+    <div class="container"> <span class="filterIcon" id="blogFilterBtn"><i class="fa fa-filter" aria-hidden="true"></i></span>
+      <div class="blogRightPanel" id="blogRightPanel">
+        <div class="blogFilterWrapper">
+          <h2 class="blogFilterTitle">Category</h2>
+          <ul class="blogFilterList">
+            <li><a href="javascript:void(0);">Travel</a></li>
+            <li><a href="javascript:void(0);">Hotel</a></li>
+            <li><a href="javascript:void(0);">Flight</a></li>
+            <li><a href="javascript:void(0);">Car</a></li>
+          </ul>
+          <h2 class="blogFilterTitle">Archive</h2>
+          <ul class="blogFilterList">
+            <li><a href="javascript:void(0);">September 2017 (3)</a></li>
+            <li><a href="javascript:void(0);">August 2017 (1)</a></li>
+            <li><a href="javascript:void(0);">July 2017 (2)</a></li>
+            <li><a href="javascript:void(0);">June 2017 (1)</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="blogLeftPanel">
+        <div class="blogDetWrapper">
+          <h2 class="blogDetTitle center">Travel And Explore</h2>
+          <ul class="blogDetList">
+            <li>1 week ago</li>
+            <li>1 Comment</li>
+            <li>by John Bergstein</li>
+            <li>26,239 Views</li>
+          </ul>
+          <div class="blogDetImg"><img src="images/blog_det.jpg" alt=""></div>
+          <div class="blogDet">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.<br>
+              <br>
+              porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.<br>
+              <br>
+              Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,<br>
+              <br>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.<br>
+              <br>
+              porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.<br>
+              <br>
+              Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+            <div class="shareIt"><img src="images/share_it.jpg" alt=""></div>
+          </div>
+          <div class="commentSection">
+            <h2 class="commentTitle">leave a comment</h2>
+            <div class="contactUsLeft">
+              <form action="contact.html">
+                <div class="col-xs-12">
+                  <input type="text" class="form-control name" placeholder="Name" required>
+                </div>
+                <div class="col-xs-12">
+                  <input type="tel" class="form-control ph" placeholder="Phone Number" required>
+                </div>
+                <div class="col-xs-12">
+                  <input type="text" class="form-control email" placeholder="Email Id" required>
+                </div>
+                <div class="col-xs-12">
+                  <textarea class="form-control msg" placeholder="Message" required></textarea>
+                </div>
+                <div class="col-xs-12">
+                  <input type="submit" value="Submit">
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="commentSection">
+            <h2 class="commentTitle">5 comments</h2>
+            <div class="commentHolder">
+              <div class="col-lg-1 col-md-2 col-sm-3 col-xs-12 center">
+                <div class="userImgWrapper"><img src="images/no_user.png" alt=""></div>
+                <h2 class="userName">John</h2>
+              </div>
+              <div class="col-lg-11 col-md-10 col-sm-9 col-xs-12">
+                <div class="commentDesc">We spend a very good time in Rainbow place aprtments. The room and the bathroom are nice and very clean. Hotel staffs were very friendly. It's a good place to stay to discover the island.</div>
+                <div class="commentDate">May 2016</div>
+              </div>
+            </div>
+            <div class="commentHolder" style="border:none">
+              <div class="col-lg-1 col-md-2 col-sm-3 col-xs-12 center">
+                <div class="userImgWrapper"><img src="images/no_user.png" alt=""></div>
+                <h2 class="userName">Sophia</h2>
+              </div>
+              <div class="col-lg-11 col-md-10 col-sm-9 col-xs-12">
+                <div class="commentDesc">We spend a very good time in Rainbow place aprtments. The room and the bathroom are nice and very clean. Hotel staffs were very friendly. It's a good place to stay to discover the island.</div>
+                <div class="commentDate">May 2016</div>
+              </div>
+            </div>
+            <a href="javascript:void(0);" class="viewMoreBlog">View More</a> </div>
+          <div class="blogPagination center"> <a href="javascript:void(0);"><img src="images/left_arrow.png" alt=""> Previous</a> <span class="divider"></span> <a href="javascript:void(0);">Next <img src="images/right_arrow.png" alt=""></a> </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<footer>
+  <div class="footerTop">
+    <div class="container">
+      <h2>Hottest deals delivered to your inbox!</h2>
+      <div class="input-group newsletter">
+        <input type="email" class="form-control" placeholder="Your Email Address">
+        <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Sign up!</button>
+        </span> </div>
+    </div>
+  </div>
+  <div class="footerMid">
+    <div class="container">
+      <ul class="footerLinks pull-left">
+        <li><a href="javascript:void(0);">Legal</a></li>
+        <li><a href="javascript:void(0);">Terms &amp; Conditions</a></li>
+        <li><a href="javascript:void(0);">Contact Us</a></li>
+        <li><a href="javascript:void(0);">Security</a></li>
+        <li><a href="javascript:void(0);">Privacy</a></li>
+        <li><a href="javascript:void(0);">Cookie</a></li>
+      </ul>
+      <ul class="socialLinks pull-right">
+        <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="javascript:void(0);"><i class="fa fa-google-plus"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footerBottom center">
+    <div class="container">
+      <div class="copyright">&copy; GoSearchTravel. 2017 </div>
+    </div>
+  </div>
+</footer>
+<div id="toTop" class="toTop" style="display: none;"></div>
+<script src="js/jquery-3.1.1.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/bootstrap-select.min.js"></script> 
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script> 
+<script src="js/moment-with-locales.min.js"></script> 
+<script src="js/bootstrap-datetimepicker.min.js"></script> 
+<script src="js/lightslider.min.js"></script> 
+<script src="js/jquery.tagcloud.js"></script> 
+<script src="js/custom.js"></script> 
+<script>
+$(document).ready(function(){
+	$('#blogFilterBtn').click(function(){
+		$('#blogRightPanel').slideToggle();
+	});
+});
+</script>
+</body>
+</html>
