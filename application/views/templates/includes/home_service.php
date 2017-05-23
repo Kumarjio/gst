@@ -35,7 +35,7 @@
 			<span><?=$set_service->city?></span>
 			<span><?=$set_service->body?></span>
 			<span class="price"><?=h_unitPrice($set_service->price,$lang_unit,$lang_currency)?></span>
-			<a class="btn btn-primary btn-outline" target="_blank" href="<?=$set_service->link?>"><?=show_static_text($lang_id,28);?> <i class="icon-arrow-right22"></i></a>
+			<a class="btn btn-primary btn-outline" target="_blank" href="<?=$set_service->link?>"><span class="linktext"><?=show_static_text($lang_id,28);?> <i class="icon-arrow-right22"></i></span></a>
 			</div>
 			</div>
 		</div>

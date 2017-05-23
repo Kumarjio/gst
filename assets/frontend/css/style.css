@@ -900,7 +900,7 @@ position: absolute;
     right: 10px;
     top: 115px;
 }
-
+/*
 .fh5co-tours > div .desc .btn {
     opacity: 1;
     border: 2px solid #fff !important;
@@ -910,6 +910,35 @@ position: absolute;
     position: absolute;
     right: 10px;
     top: 170px;
+}
+*/
+
+.fh5co-tours > div .desc .btn {
+    opacity: 1;
+    border: none!important;
+    color: #fff !important;
+    letter-spacing: 1px !important;
+    font-weight: 400 !important;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 240px;
+    height: 220px;
+}
+
+.fh5co-tours span.linktext {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    border: 2px solid #fff !important;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.fh5co-tours span.linktext:hover {
+    background: rgb(213, 8, 245)!important;
+    border: 2px solid rgb(213, 8, 245)!important;
 }
 
 /*
@@ -926,11 +955,17 @@ position: absolute;
   letter-spacing: 1px !important;
   font-weight: 400 !important;
 }
-*/
+
 
 .fh5co-tours > div .desc .btn:hover, .fh5co-tours > div .desc .btn:focus, .fh5co-tours > div .desc .btn:active {
   border: 2px solid rgb(213, 8, 245) !important;
   background: rgb(213, 8, 245) !important;
+  color: #fff !important;
+}
+*/
+.fh5co-tours > div .desc .btn:hover, .fh5co-tours > div .desc .btn:focus, .fh5co-tours > div .desc .btn:active {
+  border: none!important;
+  background: none !important;
   color: #fff !important;
 }
 .fh5co-tours > div:hover {
