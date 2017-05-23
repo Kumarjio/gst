@@ -124,9 +124,9 @@
     <div class="col-md-4 col-sm-12 ">
         <div class=" social-widget">
           <ul class="social-icons">
-            <li><a href="<?=$settings['twitter_url']?>"><i class="icon-twitter2"></i></a></li>
-            <li><a href="<?=$settings['facebook_url']?>"><i class="icon-facebook2"></i></a></li>
-            <li><a href="<?=$settings['google_plus']?>"><i class="icon-google-plus"></i></a></li>
+            <li><a href="<?=$settings['twitter_url']?>" target="_blank"><i class="icon-twitter2"></i></a></li>
+            <li><a href="<?=$settings['facebook_url']?>" target="_blank"><i class="icon-facebook2"></i></a></li>
+            <li><a href="<?=$settings['google_plus']?>" target="_blank"><i class="icon-google-plus"></i></a></li>
           </ul>
         </div>
     </div>
@@ -263,3 +263,6 @@ div.message-alert {
   transform: translateY(64px);
 }
 </style>
+<script type="text/javascript">
+$(".ajax-loading img").css("width", "5%"); 
+</script>
