@@ -19,7 +19,9 @@
 .bg-gray { background-color: #AAAAAA; }
 .bg-silver { background-color: #DDDDDD; }
 .bg-black { background-color: #111111; }
-.bg-sys { background-color: #f78536 !important; }
+.bg-sys { /*background-color: #f78536 !important;*/
+background-color: #ff9900 !important;
+ }
 
 /* Colors */
 .c-navy { color: #001F3F; }
@@ -159,4 +161,8 @@ fieldset[disabled] .btn-purple.active {
 .btn-purple .badge { 
   color: #561baf; 
   background-color: #ffffff; 
+}
+/*23-may-2017*/
+.bg-sys .pull-right {
+	width: 15% !important;
 }
