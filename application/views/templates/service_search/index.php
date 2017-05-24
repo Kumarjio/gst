@@ -150,9 +150,9 @@ if(isset($service_search_form)&&!empty($service_search_form)){
 <div class="row row-centered">
     
 <?php
-/*echo '<pre>';
-print_r($service_search_form);
-echo '</pre>';*/
+//echo '<pre>';
+//print_r($service_search_form);
+//echo '</pre>';
 foreach($service_search_form as $set_form){
 ?>
 <div class="col-xxs-12 col-xs-2 <?=count($service_search_form)>=5?'':'col-centered'?> mt">

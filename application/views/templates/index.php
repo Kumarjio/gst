@@ -6,7 +6,7 @@
 
 <?php $this->load->view('templates/includes/menu');?>
 	
-<?php $this->load->view('templates/includes/slider');?>
+<?php  $this->load->view('templates/includes/slider');?>
 		
 <?php $this->load->view('templates/includes/home_service');?>
 		

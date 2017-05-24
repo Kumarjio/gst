@@ -149,16 +149,16 @@ background-position: center center !important;
 								  <!-- Nav tabs -->
 <ul class="search-tab nav nav-tabs nav-justified" role="tablist">
   <li role="presentation" class="active">
-    <a href="#flights" aria-controls="flights" role="tab" data-toggle="tab"><span class="icons-png flight"></span> <span class="hidden-xs"><?=show_static_text($lang_id,335);?></span></a>
+    <a href="#flights" aria-controls="flights" role="tab" data-toggle="tab"><span class="fa fa-fw fa-plane"></span> <span class="hidden-xs"><?=show_static_text($lang_id,335);?></span></a>
   </li>
   <li role="presentation">
-       <a href="#hotels" aria-controls="hotels" role="tab" data-toggle="tab"><span class="icons-png hotel"></span>  <span class="hidden-xs"><?=show_static_text($lang_id,336);?></span></a>
+       <a href="#hotels" aria-controls="hotels" role="tab" data-toggle="tab"><span class="fa fa-fw fa-hotel"></span>  <span class="hidden-xs"><?=show_static_text($lang_id,336);?></span></a>
   </li>
   <li role="presentation">
-       <a href="#carhire" aria-controls="tab3" role="tab" data-toggle="tab"><span class="icons-png car"></span> <span class="hidden-xs"><?=show_static_text($lang_id,348);?></span></a>
+       <a href="#carhire" aria-controls="tab3" role="tab" data-toggle="tab"><span class="fa fa-fw fa-car"></span> <span class="hidden-xs"><?=show_static_text($lang_id,348);?></span></a>
   </li>
   <li role="presentation">
-       <a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab"><!--<i class="icon-png"><img src="assets/frontend/images/icons/holiday.png"  style=" " /></i>--> <span class="icons-png holiday"></span> 
+       <a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab"><!--<i class="icon-png"><img src="assets/frontend/images/icons/holiday.png"  style=" " /></i>--> <span class="fa fa-fw fa-umbrella"></span> 
        
         <span class="hidden-xs"><?=show_static_text($lang_id,285);?></span></a>
   </li>
@@ -166,6 +166,7 @@ background-position: center center !important;
 if($home_slider_s){
 	$i=0;
 	foreach($home_slider_s as $set_s){
+	
 ?>
   <li role="presentation">
        <a href="#s-tab-<?=$set_s->id?>" aria-controls="s-tab-<?=$set_s->id?>" role="tab" data-toggle="tab">

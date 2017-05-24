@@ -217,21 +217,22 @@ else{
 
 <ul class="search-tab nav nav-tabs nav-justified hidden-sm hidden-xs" role="tablist">
   <li class="">
-    <a href="flights"><span class="icons-png flight"></span> <span class="hidden-xs"><?=show_static_text($lang_id,335);?></span></a>
+    <a href="flights"><span class="fa fa-fw fa-plane"></span> <span class="hidden-xs"><?=show_static_text($lang_id,335);?></span></a>
   </li>
   <li class="" >
-       <a href="hotels" ><span class="icons-png hotel"></span>  <span class="hidden-xs"><?=show_static_text($lang_id,336);?></span></a>
+       <a href="hotels" ><span class="fa fa-fw fa-hotel"></span>  <span class="hidden-xs"><?=show_static_text($lang_id,336);?></span></a>
   </li>
   <li class="active">
-       <a href="javscript:;"><span class="icons-png car"></span> <span class="hidden-xs"><?=show_static_text($lang_id,348);?></span></a>
+       <a href="javscript:;"><span class="fa fa-fw fa-car"></span> <span class="hidden-xs"><?=show_static_text($lang_id,348);?></span></a>
   </li>
   <li  >
-       <a href="holidays" ><span class="icons-png holiday"></span> <span class="hidden-xs"><?=show_static_text($lang_id,285);?></span></a>
+       <a href="holidays" ><span class="fa fa-fw fa-umbrella"></span> <span class="hidden-xs"><?=show_static_text($lang_id,285);?></span></a>
   </li>
 <?php
 if($home_slider_s){
 	$i=0;
 	foreach($home_slider_s as $set_s){
+	
 ?>
   <li role="presentation">
        <a href="<?=$active=='Search '.$set_s->id?'javascript:;':$set_s->name?>">

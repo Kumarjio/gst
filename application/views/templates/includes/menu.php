@@ -108,6 +108,7 @@ ul.social-list li {
 $menu_service = $this->comman_model->get_lang('services',$lang_id,NULL,array('enabled'=>1),'service_id',false);
 if($menu_service ){
 	$i=0;
+	//print_r($menu_service);
 	foreach($menu_service as $set_s){
 ?>
 <li class="<?=$active=='Search '.$set_s->id?'active':''?>"><a href="<?=''.$set_s->name?>"><i class="icon-png"><img src="assets/frontend/images/<?=isset($service_icon[$i])?$service_icon[$i]:'flight.png'?>" /></i> <?=$set_s->title;?></a></li>

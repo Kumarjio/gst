@@ -265,4 +265,8 @@ div.message-alert {
 </style>
 <script type="text/javascript">
 $(".ajax-loading img").css("width", "5%"); 
+/* 24-may-2017*/
+
+    $(".bg-sys").addClass("container");
+
 </script>

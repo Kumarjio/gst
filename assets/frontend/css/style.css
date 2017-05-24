@@ -60,7 +60,8 @@ figure {
 
 ::-moz-selection {
   color: #fcfcfc;
-  background: #F78536;
+  /*background: #F78536;*/
+  background: #ff9900;
 }
 
 ::selection {
@@ -677,7 +678,7 @@ figure {
 }
 
 .mt {
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
 }
 
 div.cs-select span {
@@ -938,11 +939,10 @@ position: absolute;
 }
 
 .fh5co-tours span.linktext {
-	  background: rgb(213, 8, 245);
     position: absolute;
     bottom: -10px;
     right: 10px;
-    border: 2px solid rgb(213, 8, 245) !important;
+    border: 2px solid #fff !important;
     border-radius: 5px;
     padding: 10px 20px;
 }
@@ -2454,5 +2454,8 @@ ul.footer-nav li a:hover {
 }
 /* 24-may-2017*/
 #advance-search-form label {
-  font-size: 15px;
+  font-size: 14px;
+}
+.btn.btn-blck-sys.btn-block {
+  margin-top: 10px;
 }
