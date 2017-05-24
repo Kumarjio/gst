@@ -869,7 +869,7 @@ position: absolute;
     width: 100%;
     padding: 10px 15px;
 }
-
+ 
 .fh5co-tours h3 {
 	background: rgb(213, 8, 245);
 	color: #fff;
@@ -883,6 +883,13 @@ position: absolute;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+}
+
+.fh5co-tours > div .desc h4 {
+    color: #fff;
+    padding: 0;
+    margin: 0 0 5px 0;
+    font-size: 30px !important;
 }
 
 .fh5co-tours > div .desc span {
