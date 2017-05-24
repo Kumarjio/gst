@@ -938,10 +938,11 @@ position: absolute;
 }
 
 .fh5co-tours span.linktext {
+	  background: rgb(213, 8, 245);
     position: absolute;
     bottom: -10px;
     right: 10px;
-    border: 2px solid #fff !important;
+    border: 2px solid rgb(213, 8, 245) !important;
     border-radius: 5px;
     padding: 10px 20px;
 }
