@@ -92,7 +92,8 @@
 /*	color:#f78536;*/
 	padding:7px 5px !important;
 	text-transform:uppercase;
-	font-size:14px;
+	/*font-size:14px;*/
+	font-size:13px;
 	min-height:35px;
 }
 
@@ -105,7 +106,7 @@
 }
 
 .search-main-wrapper .search-tab .icons-png{
-	height:15px;
+	height:14px;
 	width:16px;
 	display:inline-block;
 }
