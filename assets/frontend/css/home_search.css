@@ -99,9 +99,10 @@
 * ======================================================= */
 
 .search-tab .icons-png{
-	height:15px;
-	width:16px;
-	display:inline-block;
+	height: 16px;
+  width: 16px;
+  display: inline-block;
+  vertical-align: bottom;
 }
 .search-tab .icons-png.car {
 	background-image:url('../images/icons/car.png');
@@ -219,7 +220,8 @@
 /*	color:#f78536;*/
 	padding:7px 6px !important;
 	text-transform:uppercase;
-	font-size:14px;
+/*font-size:14px;*/
+	font-size:13px;
 	min-height:35px;
 }
 @media (max-width: 1199px) {
