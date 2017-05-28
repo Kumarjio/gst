@@ -164,5 +164,5 @@ fieldset[disabled] .btn-purple.active {
 }
 /*23-may-2017*/
 .bg-sys .pull-right {
-	width: 15% !important;
+	/*width: 15% !important;*/
 }
