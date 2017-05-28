@@ -37,4 +37,5 @@
 	<script src="assets/frontend/js/classie.js"></script>
 	<script src="assets/frontend/js/selectFx.js"></script>
 	<script src="gofly/js/gstmain.js"></script>
+	<?=$settings['analytic_code'];?>
 	</head>

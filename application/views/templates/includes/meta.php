@@ -7,20 +7,14 @@
 <meta name="description" content="<?php echo $seo_description; ?>" data-dynamic="true">    
 <meta name="keywords" content="<?php echo $seo_keywords; ?>" data-dynamic="true" />
 <meta name="google-site-verification" content="D7uzzAKUtReA5CRW8fuiKGbbhMH2jv4r4fyWAdgJBYI" />
-
 <?php
 if(isset($set_meta_image)&&!empty($set_meta_image)){
 ?>
 <meta property="og:url" content="<?php echo $seo_url_link?>"  data-dynamic="true">
-    <meta property="og:description"   content="<?php echo $seo_description; ?>" />
-
+<meta property="og:description"   content="<?php echo $seo_description; ?>" />
 <meta property="og:image" content="<?php echo $seo_url_image?>"  data-dynamic="true">
-
 <meta property="og:image:width" content="444"  data-dynamic="true">
-
 <meta property="og:image:height" content="640"  data-dynamic="true">
-
 <?php	
 }
 ?>
-
