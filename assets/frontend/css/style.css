@@ -786,6 +786,9 @@ div.cs-select span {
   margin-bottom: 1.5em;
 }
 
+div#fh5co-tours h3 {
+	color:#fff;
+}
 .fh5co-tours {
   margin-bottom: 30px;
 }
@@ -2458,4 +2461,11 @@ ul.footer-nav li a:hover {
 }
 .btn.btn-blck-sys.btn-block {
   margin-top: 10px;
+}
+/* 27may2017 */
+.col-md-4.col-sm-6.fh5co-tours.animate-box.fadeInUp.animated {
+  padding: 0 15px;
+}
+.mt {
+  padding: 0 15px;
 }
