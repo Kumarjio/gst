@@ -475,42 +475,28 @@ else{
 
 
 <section id="aa-banner" class="hidden-sm hidden-xs" style="padding:10px 0">
-    <div class="container search-content">
-      <div class="row">
-
-<?php
+  <?php
 $slider_banner = $this->comman_model->get_lang('banners',$this->data['lang_id'],NULL,array('template'=>'bottom'),'banner_id',false);
 if($slider_banner){
 	$i=0;
 	foreach($slider_banner as $set_sl){
 			
 ?>
-        <div class="col-md-12">        
-          <div class="row">
-            <div class="aa-banner-area">
-<?php
+  <?php
 if(!empty($set_sl->body)){
 	echo $set_sl->body;
 }
 else{
 ?>
-<a href="<?=$set_sl->link?>"><img src="<?='assets/uploads/banners/'.$set_sl->image?>" style="width:100%;height:auto" /></a>
-<?php
+  <a href="<?=$set_sl->link?>"><img src="<?='assets/uploads/banners/'.$set_sl->image?>" style="width:100%;height:auto" /></a>
+  <?php
 }
-?>    
-
-          </div>
-          </div>
-        </div>
-
-<?php
+?>
+  <?php
 	}
 }
 ?>
-      </div>
-    </div>
-  </section>
-
+</section>
 </div><!--//search-section//-->
 <?php $this->load->view('templates/includes/home_place');?>
 <?php $this->load->view('templates/includes/footer.php'); ?>

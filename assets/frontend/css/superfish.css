@@ -60,6 +60,7 @@
 	*white-space: normal; /* ...unless you support IE7 (let it wrap) */
 	-webkit-transition: background .2s;
 	transition: background .2s;
+	text-transform: uppercase;
 }
 .sf-menu ul li {
 	background: #AABDE6;
