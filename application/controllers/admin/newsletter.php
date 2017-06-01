@@ -58,6 +58,7 @@ class Newsletter extends Admin_Controller{
             $data =array();
         	$data = $this->news_model->array_from_post(array('subject','desc'));
 			$user_email = $this->input->post('email');
+			
 			$this->load->library('email');
 			$config = array (
 				  'mailtype' => 'html',
@@ -77,6 +78,10 @@ class Newsletter extends Admin_Controller{
 			}
             redirect($this->data['_cancel'].'/send_mail/'.$id);
 		}
+		 $ret=$this->data['listing'] = $this->comman_model->get_list();
+		//print_r($ret); die;
+		$this->data['all_data'] = $this->comman_model->get($this->_table_names,false);
+		
         
         // Load the view
 		$this->data['subview'] = $this->_subView.'send_mail';
@@ -122,8 +127,10 @@ class Newsletter extends Admin_Controller{
 			$this->email->initialize($config);
 			$this->email->from($this->data['settings']['site_email'], $this->data['settings']['site_name']);
 			$this->email->to($user_email);
+			$add_unsubscribe=$data['desc']."<br/><br/><br/><span>For stop future mails: </span><br/><a href='https://www.gosearchtravel.com/unsubscribe?email=".$user_email."' target='_blank' class='btn btn-success' style=' font-size: 18px; font-weight: bold; color:#008d4c; margin: 10px auto; text-align: center; text-decoration: none; text-transform: uppercase;'>Unsubscribe here</a>";
+  //echo $add_unsubscribe; die;
 			$this->email->subject($data['subject']);
-			$this->email->message($data['desc']);
+			$this->email->message($add_unsubscribe);
 			if($this->email->send()){
 				$this->session->set_flashdata('success',show_static_text($this->data['adminLangSession']['lang_id'],298));
 			}
@@ -278,5 +285,67 @@ class Newsletter extends Admin_Controller{
         
         return TRUE;
     }
+	
+	
+    public function sendmailtolist($id=false){
+		   if($id){
+			$this->data['name'] = show_static_text($this->data['adminLangSession']['lang_id'],25400).'Send';
+			$this->data['title'] = $this->data['name'].' | '.$this->data['settings']['site_name'];
+            $this->data['news'] = $this->comman_model->get_by($this->_table_names,array('id'=>$id), FALSE, FALSE, true);
+			if(!$this->data['news']){
+	            redirect($this->data['_cancel'].'');
+			}
+        }
+        else
+        {
+			redirect($this->data['_cancel'].'');
+        }
+	   if(!empty($_POST))
+	   {
+		  // print_r($_POST);die;
+		   $sub_id=$_POST['email'];
+		   $fetch_sub=$this->comman_model->get_subscribers($sub_id);
+		  //echo "<pre>"; print_r($fetch_sub); die;
+			$em_id = $fetch_sub[0]->email;
+			$to =$this->comman_model->getsubscriberemail($em_id);
+		// echo $em_id."<pre>"; print_r($to); 
+		
+    foreach($to as $row)
+    {
+        $array[] = $row['email']; // add each user id to the array
+		
+    }
+			$this->load->library('email');
+			$config = array (
+				  'mailtype' => 'html',
+				  'charset'  => 'utf-8',
+				  'priority' => '1'
+				   );
+			$this->email->initialize($config);
+			$this->email->from($this->data['settings']['site_email'], $this->data['settings']['site_name']);
+			$this->email->to($array);
+			$this->email->subject($_POST['subject']);
+			$add_unsubscribe=$_POST['desc']."<br/><br/><br/><span>For stop future mails: </span><br/><a href='https://www.gosearchtravel.com/unsubscribe?email=".$user_email."' target='_blank' class='btn btn-success' style=' font-size: 18px; font-weight: bold; color:#008d4c; margin: 10px auto; text-align: center; text-decoration: none; text-transform: uppercase;'>Unsubscribe here</a>";
+			
+			$this->email->message($add_unsubscribe);
+			if($this->email->send()){
+				$this->session->set_flashdata('success',show_static_text($this->data['adminLangSession']['lang_id'],298));
+			}
+			else{
+				$this->session->set_flashdata('error',show_static_text($this->data['adminLangSession']['lang_id'],200));
+			}
+		   
+	   }
+	   
+		 $ret=$this->data['listing'] = $this->comman_model->get_list();
+		//print_r($ret); die;
+		$this->data['all_data'] = $this->comman_model->get($this->_table_names,false);
+		
+        
+        // Load the view
+		$this->data['subview'] = $this->_subView.'send_mail';
+        $this->load->view('admin/_layout_main', $this->data);	
+	}
+	
     
 }
