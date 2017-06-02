@@ -78,6 +78,11 @@
 
 }
 @media (min-width: 992px) {
+	.search-wrapper #advance-search-form {
+    width: 50%;
+    margin: 0 auto;
+}
+
 	.left-side-box,
 	.right-side-box{
 		float: left;
@@ -201,7 +206,7 @@
 }
 
 .side-content .slider-selection{
-	background:#f78536 ;
+	background:#ff9900;
 }
 
 .side-content .side-c{
@@ -440,7 +445,7 @@ border-right:2px dotted #d4d4d4
 	border-bottom:none;
 }
 .flight-item .item-price-more .price .amount{
-    color: #f78536 ;
+    color: #ff9900 ;
 }
 .flight-item.travelpayouts .item-media .image-cover img {
     width: 100%;
@@ -505,7 +510,7 @@ border-right:2px dotted #d4d4d4
 
 .search-form-wp{
 	padding:0 20px ;
-	background:#f78536;
+	background:#ff9900;
 	position:fixed;
 	width:100%;
 }
@@ -566,7 +571,7 @@ border-right:2px dotted #d4d4d4
 @media screen and (max-width: 991px) {
 .search-form-wp{
 	padding:0 20px ;
-	background:#f78536;
+	background:#ff9900;
 	position:inherit;
 	width:100%;
 }
