@@ -92,7 +92,7 @@ ul.social-list li {
 
 				<div class="nav-header">
 					<a href="javascript:;" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
-					<h1 id="fh5co-logo"><a href="<?=$lang_code?>"><img src="assets/uploads/sites/<?=$settings['logo']?>" class="img-responsive" alt="<?=$settings['site_name']?>" style=""  /></a></h1>
+					<h1 id="fh5co-logo"><a href="<?= base_url(); ?>"><img src="assets/uploads/sites/<?=$settings['logo']?>" class="img-responsive" alt="<?=$settings['site_name']?>" style=""  /></a></h1>
 					<!-- START #fh5co-menu-wrap -->
 					<nav id="fh5co-menu-wrap" role="navigation">
 						<ul class="sf-menu" id="fh5co-primary-menu">
