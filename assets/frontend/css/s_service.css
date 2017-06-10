@@ -14,9 +14,24 @@
 	padding-left:5px;
 	padding-right:5px;
 }
-
-
-
+.row.row-centered.pcen {
+    padding-left: 13%;
+    padding-right: 13%;
+}
+#advance-search-form label {
+    font-weight: 400;
+}
+.search-form-wp select, .search-form-wp input[type="text"]
+{
+	font-weight: 500;
+	    height: 35px;
+		    height: 35px;
+    padding: 0 17px;
+}
+.col-md-6.col-xs-12.mt
+{
+	width:25%;
+}
 /* =======================================================
 *
 * flight-item
@@ -35,6 +50,39 @@
 .flight-item .item-price-more .price .amount{
     color: #f78536 ;
 }
+
+.leftBanner, .rightBanner {
+    position: absolute !important;
+    top: 185px !important;
+}
+
+
+
+
+
+
+
+@media (max-width: 1199px)
+{
+	.row.row-centered.pcen
+	{
+		margin-top: 52px;
+	}
+}
+
+@media (max-width: 991px)
+{
+.btn.btn-blck-sys.btn-block {
+    margin-top: 56px;
+    width: 20%;
+	    margin-left: 14px;
+		float: right;
+}
+.col-md-6.col-xs-12.mt {
+    width: 100%;
+}
+}
+
 @media (max-width: 768px) {
 	.flight-item .item-media,
 	.flight-item .item-body,
@@ -62,8 +110,18 @@
 		width: 50%;
 		height: 105px;
 	}
-
+		.search-form-wp label {
+		width: 59%;
+	}
+	.btn.btn-blck-sys.btn-block {
+    margin-top: 20px;
+    width: 45%;
+	}
+	.row.row-centered.pcen {
+    margin-top: 20px;
 }
+
+
 
 
 
@@ -142,7 +200,7 @@
   background: #FFF;
   border: none;
   box-shadow: none;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 14px;
   padding: 5px 10px !important;
   -webkit-border-radius: 0;
@@ -171,7 +229,7 @@
 	}
 	.search-form-wp select, .search-form-wp  input[type="text"] {
 		  float: right;
-		  width: 55%;
+		  width: 100%;
 	}
 	.search-form-wp  .adult-select{
 	  float: right;
@@ -189,6 +247,25 @@
 		width:100%;
 		margin-right:0 !important;
 	}
-
+	
+.btn.btn-blck-sys.btn-block {
+    margin-top: 20px;
+    width: 60%;
 
 }
+}
+
+@media (max-width: 475px)
+{
+.search-form-wp label
+	{
+    width: 100%;
+	}
+	.btn.btn-blck-sys.btn-block {
+     width: 122%;
+}
+
+
+
+
+

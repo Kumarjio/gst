@@ -100,6 +100,28 @@ figure {
 .header-top .fh5co-link a:hover {
   color: white !important;
 }
+.sidebox-container.bg-sys.search-form-wp.servi_tab 
+{
+	position: fixed;
+    
+    z-index: 10000;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 768px) {
   .header-top .fh5co-link {
     text-align: center;
@@ -397,7 +419,7 @@ figure {
 }
 #fh5co-logo img{
 	height:45px;
-	width:150px;
+	width:130px;
 }
 
 @media (max-width: 768px) {

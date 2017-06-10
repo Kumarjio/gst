@@ -13,6 +13,66 @@
 	margin:0;
 }
 
+#advance-search-form .input-group-addon, #advance-search-form2 .input-group-addon  {
+  position: absolute;
+    top: 34px;
+    z-index: 3;
+    background: #FFF;
+    border: medium none;
+    border-radius: 0;
+    padding: 8px 11px;
+}
+
+.tab-content .btn
+{
+	border:none !important;
+}
+button.btn.btn-sys.btn-sm.pull-right {
+        padding: 9px 26px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+	margin-top: 31px;
+}
+.pull-right {
+    float: left;
+}
+
+
+span#basic-addon1 {
+    position: absolute;
+    top: 34px;
+    z-index: 3;
+    background: #FFF;
+    border: medium none;
+    border-radius: 0;
+    padding: 8px 11px;
+}
+
+.home-slider-wrapper .adult-select span {
+    padding: 10px 9px !important;
+}
+input
+{
+	
+}
+#carhire .select-time {
+    padding: 0px 6px 0px 13px !important;
+}
+span.filter-option.pull-left {
+    margin-left: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 990px) {
 	#flights .text-field-box,
 	#flights .date-field-box{
@@ -285,7 +345,7 @@
 }
 
 .home-slider-wrapper .tab-content{
-	padding:6px 10px;
+	padding:10px 10px;
 	background:#ff9900;
 }
 
@@ -300,6 +360,7 @@
   color: #000 !important;
   font-size:14px;
   font-family:"Open Sans",sans-serif;
+  padding: 3px 5px 4px 27px !important;
 }
 
 .home-slider-wrapper .tabulation input[type="text"]::-webkit-input-placeholder {
@@ -367,3 +428,24 @@
 	margin:0;
 }
 
+/*.col-xxs-12.col-md-2.mt.text-field-box i
+{
+	    position: relative;
+    top: 37px;
+    left: -33px;
+    color: #000;
+}
+*/
+.input-group-addon {
+
+  color: #555555;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1;
+  text-align: center;
+}
+.input-group-addon, .input-group-btn  {
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 1%;
+}
