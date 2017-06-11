@@ -102,7 +102,4 @@ function save_newsletter(){
     <div class="alert-msge" >Removed from your Wishlist</div>
   </div>
 </div>
-<script type="text/javascript">
-$(".ajax-loading img").css("width", "5%"); 
-</script>
 <?=$settings['analytic_code'];?>
