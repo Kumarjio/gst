@@ -1896,13 +1896,14 @@ position: absolute;
 	padding-left:5px;
 }
 .subscribe-wrapper{
-	padding:20px 0;
+	padding:40px 0;
 	background:#000;
 	margin-bottom:0px;
 }
 .subscribe-wrapper h2{
 	margin-bottom:5px;
 	color:#fff;
+	font-weight: 100;
 }
 @media (max-width: 768px) {
 .subscribe-wrapper h2{
