@@ -20,7 +20,7 @@
     background: #FFF;
     border: medium none;
     border-radius: 0;
-    padding: 8px 11px;
+    padding: 4px 11px;
 }
 
 .tab-content .btn
@@ -28,7 +28,7 @@
 	border:none !important;
 }
 button.btn.btn-sys.btn-sm.pull-right {
-        padding: 9px 26px;
+        padding: 6px 17px;
     font-size: 14px;
     font-weight: 500;
     text-transform: uppercase;
@@ -46,7 +46,13 @@ span#basic-addon1 {
     background: #FFF;
     border: medium none;
     border-radius: 0;
-    padding: 8px 11px;
+    padding: 4px 11px;
+}
+
+.mt select.form-control, .mt button.btn.dropdown-toggle.bs-placeholder.btn-default
+ {
+	height: 32px;
+    padding: 0px 15px;
 }
 
 .home-slider-wrapper .adult-select span {
@@ -120,7 +126,7 @@ span.filter-option.pull-left {
 .passenger {
 	background: #fff none repeat scroll 0 0;
 	color: #000;
-	padding: 8.2px 10px;
+	padding: 4px 10px;
 }
 .passenger a{
 	color: #000;
@@ -361,6 +367,7 @@ span.filter-option.pull-left {
   font-size:14px;
   font-family:"Open Sans",sans-serif;
   padding: 3px 5px 4px 27px !important;
+  height: 32px;
 }
 
 .home-slider-wrapper .tabulation input[type="text"]::-webkit-input-placeholder {
