@@ -3,88 +3,24 @@ $home_slider_s = $this->comman_model->get_lang('services',$lang_id,NULL,array('e
 ?>
 <?php $this->load->view('templates/includes/header.php'); ?>
 <link rel="stylesheet" href="assets/global/plugins/bootstrap-slider/dist/css/bootstrap-slider.min.css" >
-<script src="assets/global/plugins/bootstrap-slider/dist/bootstrap-slider.min.js"></script>
 <link href="assets/plugins/star_rating/css/star-rating.css" media="all" rel="stylesheet" type="text/css"/>
-<script src="assets/plugins/star_rating/js/star-rating.js" type="text/javascript"></script>
 <link rel="stylesheet" href="assets/global/plugins/touchspin/jquery.bootstrap-touchspin.css" />
-<script type="text/javascript" src="assets/global/plugins/touchspin/jquery.bootstrap-touchspin.js"></script>
-<link href="assets/global/css/product_list/2.css" rel="stylesheet">
 <link href="assets/frontend/css/s_m_flight.css" rel='stylesheet' type='text/css'>
 <style>
 .search-section {
 	background-image: url("<?='assets/uploads/sites/'.$settings['background_flight_search'];?>");
 }
 </style>
+<script src="assets/global/plugins/bootstrap-slider/dist/bootstrap-slider.min.js"></script>
+<script src="assets/plugins/star_rating/js/star-rating.js" type="text/javascript"></script>
+<script type="text/javascript" src="assets/global/plugins/touchspin/jquery.bootstrap-touchspin.js"></script>
 <script type="text/javascript" src="assets/global/plugins/typeahead/js/bootstrap-typeahead.js"></script>
-<script>
-$(document).ready(function() {          
-$("#advance-search-form .f-place").typeahead({
-	onSelect: function(item) {
-		$('#i-fid').val(item.value);
-        console.log(item.value);
-    },
 
-    ajax: {
-        url: "ajax_product/api",
-        timeout: 500,
-        displayField: "value",
-  		valueField: "id",
-        triggerLength: 1,
-        method: "get",
-        loadingClass: "loading-circle",
-        preDispatch: function (query) {
-            //showLoadingMask(true);
-            return {
-                query: query
-            }
-        },
-        preProcess: function (data) {
-            if (data.success === false) {
-                return false;
-            }
-            return data.results;
-        }
-    },
-});
-
-$("#advance-search-form .t-place").typeahead({
-	onSelect: function(item) {
-		$('#i-tid').val(item.value);
-        console.log(item.value);
-    },
-
-    ajax: {
-        url: "ajax_product/api",
-        timeout: 500,
-        displayField: "value",
-  		valueField: "id",
-        triggerLength: 1,
-        method: "get",
-        loadingClass: "loading-circle",
-        preDispatch: function (query) {
-            //showLoadingMask(true);
-            return {
-                query: query
-            }
-        },
-        preProcess: function (data) {
-            if (data.success === false) {
-                return false;
-            }
-            return data.results;
-        }
-    },
-});
-
-
-})
-</script>
 <body>
 <?php $this->load->view('templates/includes/menu.php'); ?>
 <?php $this->load->view('templates/includes/menu_tab.php'); ?>
 <div class="search-section">
  <div class="searchContainer">
-
   <section class="search-main-wrapper">
     <div class="container">
       <div class="row">
