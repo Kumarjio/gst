@@ -108,20 +108,6 @@ figure {
     width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 768px) {
   .header-top .fh5co-link {
     text-align: center;
@@ -845,44 +831,6 @@ div#fh5co-tours h3 {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-/*
-	.fh5co-tours > div .desc {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 30px;
-  z-index: 12;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.fh5co-tours > div .desc h3 {
-  color:rgba(251, 5, 5, 1);
-  color: #fff;
-  margin: 0;
-  padding: 0;
-  opacity: 1;
-  font-size: 30px;
-  font-weight: 400;
-  visibility: visible;
-  margin-bottom: 5px;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.fh5co-tours > div .desc {
-position: absolute;
-  top: 10px;
-  left: 15px;
-  z-index: 12;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-*/
 
 .fh5co-tours > div .desc {
     position: absolute;
@@ -925,29 +873,17 @@ position: absolute;
 }
 .fh5co-tours > div .desc span.pp {
     position: absolute;
-    top: 145px;
-    right: 10px;
+    top: 202px;
+    right: 20px;
 }
 .fh5co-tours > div .desc .price {
     font-size: 30px;
     font-weight: bold;
     color: #fff;
     position: absolute;
-    right: 10px;
-    top: 110px;
-}
-/*
-.fh5co-tours > div .desc .btn {
-    opacity: 1;
-    border: 2px solid #fff !important;
-    color: #fff !important;
-    letter-spacing: 1px !important;
-    font-weight: 400 !important;
-    position: absolute;
-    right: 10px;
+    right: 20px;
     top: 170px;
 }
-*/
 
 .fh5co-tours > div .desc .btn {
     opacity: 1;
@@ -970,6 +906,7 @@ position: absolute;
     border: 2px solid #fff !important;
     border-radius: 5px;
     padding: 10px 20px;
+    display: none;
 }
 
 .fh5co-tours span.linktext:hover {
@@ -977,28 +914,6 @@ position: absolute;
     border: 2px solid rgb(213, 8, 245)!important;
 }
 
-/*
-.fh5co-tours > div .desc .price {
-  font-size: 30px;
-  font-weight: bold;
-  color: #fff;
-}
-
-.fh5co-tours > div .desc .btn {
-  opacity: 1;
-  border: 2px solid #fff !important;
-  color: #fff !important;
-  letter-spacing: 1px !important;
-  font-weight: 400 !important;
-}
-
-
-.fh5co-tours > div .desc .btn:hover, .fh5co-tours > div .desc .btn:focus, .fh5co-tours > div .desc .btn:active {
-  border: 2px solid rgb(213, 8, 245) !important;
-  background: rgb(213, 8, 245) !important;
-  color: #fff !important;
-}
-*/
 .fh5co-tours > div .desc .btn:hover, .fh5co-tours > div .desc .btn:focus, .fh5co-tours > div .desc .btn:active {
   border: none!important;
   background: none !important;
@@ -1810,47 +1725,6 @@ position: absolute;
   color: #5a5a5a;
 }
 
-/*#footer {
-  background: #393e46;
-  padding: 60px 0 40px;
-}
-#footer p {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 14px;
-}
-#footer p a {
-  color: rgba(255, 255, 255, 0.5);
-}
-#footer p a:hover, #footer p a:active, #footer p a:focus {
-  color: rgba(255, 255, 255, 0.9) !important;
-}
-#footer .fh5co-footer-link {
-  padding-bottom: 30px;
-}
-#footer .fh5co-footer-link h3 {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 25px;
-}
-#footer .fh5co-footer-link li, #footer .fh5co-footer-link ul {
-  padding: 0;
-  margin: 0;
-}
-#footer .fh5co-footer-link li {
-  list-style: none;
-  margin-bottom: 15px;
-  line-height: 1.3;
-}
-#footer .fh5co-footer-link li a {
-  color: rgba(255, 255, 255, 0.5);
-}
-#footer .fh5co-footer-link li a:hover, #footer .fh5co-footer-link li a:active, #footer .fh5co-footer-link li a:focus {
-  color: #fff !important;
-}
-*/
-
-
 .footer-wrapper{
 	padding:10px 0;
 	background:#FF9900;
@@ -2645,4 +2519,12 @@ ul.footer-nav li a:hover {
 .thankyou_page h1 {
   color: rgb(255, 153, 0);
   font-weight: bold;
+}
+/* 20-june-2017*/
+.font_icon{
+	top: 32px;
+position: absolute;
+left: 22px;
+color:#000;
+
 }
