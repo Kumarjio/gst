@@ -72,7 +72,7 @@
   color: #fff !important;
 }
 .btn-sys{
-  background: #de6c1d !important;
+  /*background: #de6c1d !important;*/background: #000 !important;
   color: #fff;
   border: none !important;
   border: 2px solid transparent !important;
@@ -210,15 +210,15 @@
 * ======================================================= */
 
 
-.search-wrapper .nav-tabs { border-bottom: 2px solid #CCC !important;justify-content:space-between;background:transparent;margin-bottom:10px; }
+.search-wrapper .nav-tabs { /*border-bottom: 2px solid #CCC !important*/;justify-content:space-between;background:transparent;/*margin-bottom:10px;*/ }
 .search-wrapper .nav-tabs > li.active > a,
 .search-wrapper .nav-tabs > li.active > a:focus,
 .search-wrapper .nav-tabs > li.active > a:hover { border-width: 0; }
 .search-wrapper .nav-tabs > li > a { border: none; color: #393939;font-size:17px }
 .search-wrapper .nav-tabs > li.active > a,
 .search-wrapper .nav-tabs > li.active > a:hover,
-.search-wrapper .nav-tabs > li > a:hover { border: none; color: #000 !important; background: transparent; }
-.search-wrapper .nav-tabs > li > a::after { content: ""; background: #000; height: 2px; position: absolute; width: 100%; left: 0px; bottom: -1px; transition: all 250ms ease 0s; transform: scale(0); }
+.search-wrapper .nav-tabs > li > a:hover { border: none; color: #fff !important; background: transparent; }
+.search-wrapper .nav-tabs > li > a::after { content: ""; height: 2px; position: absolute; width: 100%; left: 0px; bottom: -1px; transition: all 250ms ease 0s; transform: scale(0); }
 .search-wrapper .nav-tabs > li.active > a::after,
 .search-wrapper .nav-tabs > li:hover > a::after { transform: scale(1); }
 .search-wrapper .tab-nav > li > a::after { background: #21527d none repeat scroll 0% 0%; color: #fff; }
@@ -299,4 +299,12 @@
 	#fh5co-logo{
 		margin-right:0px;
 	}
+}
+
+
+/*Banners Sticky*/
+
+ .sticky {
+  position:fixed!important;
+  top: 180px!important;
 }

@@ -491,7 +491,6 @@ margin-top: 0;
 }
 }
 .search-section {
-	background-image: url("<?='assets/uploads/sites/'.$settings['background_flight_search'];?>");
 	background-attachment: fixed;
 	background-position: center center;
 	background-size: cover;
@@ -531,7 +530,7 @@ margin-top: 0;
 	padding: 10px;
 }
 .searchContainer {
-	background: url('/assets/images/planeview.jpg') center center no-repeat;
+	background: url('/assets/images/searchflights.jpg') center center no-repeat;
 	background-size: cover;
 	padding: 80px 0;
 	min-height: 320px;

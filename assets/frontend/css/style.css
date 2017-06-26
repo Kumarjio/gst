@@ -906,7 +906,7 @@ div#fh5co-tours h3 {
     border: 2px solid #fff !important;
     border-radius: 5px;
     padding: 10px 20px;
-    display: none;
+    display: none!important;
 }
 
 .fh5co-tours span.linktext:hover {
