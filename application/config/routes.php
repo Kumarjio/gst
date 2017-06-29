@@ -74,6 +74,7 @@ if($result){
 
 	$route['(.+)$'] = "$1";
 
-
+$route['testapi'] = 'front/hotelapi';
+$route['hotelapi'] = 'front/hotelapilist';
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
