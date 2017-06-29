@@ -53,7 +53,6 @@ $db['default']['username'] = 'gst_portal';
 $db['default']['password'] = 'Shafqat122';
 $db['default']['database'] = 'gst_portal';
 
-
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
