@@ -63,11 +63,16 @@ if($admin_details->role=='super admin'){
     </ul>
 </li>
 
-<li <?php echo $active=='Media'?'class="active"':''; ?>>
-    <a href="<?=$admin_link?>/media" target="">
+<li class="has-sub">
+    <a href="javascript:;" target="">
+	<b class="caret pull-right"></b>
     <i class="fa fa-file-code-o"></i>
     <span class="title"><?=show_static_text($adminLangSession['lang_id'],1704);?>Media</span>
     </a>
+	<ul class="sub-menu">
+        <li class=""><a href="<?=$admin_link?>/media/create">Add New</a></li>       
+        <li><a href="<?=$admin_link?>/media">Library</a></li>
+        </ul>
 </li>
 
 
@@ -75,7 +80,7 @@ if($admin_details->role=='super admin'){
 <li <?php echo $active=='Employee Management'?'class="active"':''; ?>>
     <a href="<?=$admin_link?>/admin_user" target="">
     <i class="fa fa-users"></i>
-    <span class="title"><?=show_static_text($adminLangSession['lang_id'],1704);?>Employee Management</span>
+    <span class="title"><?=show_static_text($adminLangSession['lang_id'],1704);?>Admin User Management</span>
     </a>
 </li>
 
@@ -177,10 +182,10 @@ if($admin_details->role=='super admin'){
     <a href="javascript:;">
         <b class="caret pull-right"></b>
         <i class="fa fa-file-code-o"></i>
-        <span><?=show_static_text($adminLangSession['lang_id'],1080);?>Ticket Management</span> 
+        <span><?=show_static_text($adminLangSession['lang_id'],1080);?>Support Ticket Management</span> 
     </a>
     <ul class="sub-menu">
-        <li><a href="<?=$admin_link?>/ticket"><?=show_static_text($adminLangSession['lang_id'],1802);?>Ticket</a></li>
+        <li><a href="<?=$admin_link?>/ticket"><?=show_static_text($adminLangSession['lang_id'],1802);?>Tickets</a></li>
     </ul>
 </li>
 
@@ -191,9 +196,10 @@ if($admin_details->role=='super admin'){
         <span><?=show_static_text($adminLangSession['lang_id'],180);?></span> 
     </a>
     <ul class="sub-menu">
-        <li><a href="<?=$admin_link?>/banner"><?=show_static_text($adminLangSession['lang_id'],1810);?>Banner</a></li>
+        <li><a href="<?=$admin_link?>/banner"><?=show_static_text($adminLangSession['lang_id'],1810);?>Banners</a></li>
         <li><a href="<?=$admin_link?>/content"><?=show_static_text($adminLangSession['lang_id'],181);?></a></li>
         <li><a href="<?=$admin_link?>/page"><?=show_static_text($adminLangSession['lang_id'],182);?></a></li>
+        <li><a href="<?=$admin_link?>/page">Landing Pages</a></li>
     </ul>
 </li>
 
@@ -205,7 +211,8 @@ if($admin_details->role=='super admin'){
     </a>
     <ul class="sub-menu">
         <li><a href="<?=$admin_link?>/newsletter"><?=show_static_text($adminLangSession['lang_id'],186);?></a></li>
-        <li><a href="<?=$admin_link?>/subscriber"><?=show_static_text($adminLangSession['lang_id'],187);?></a></li>		
+        <li><a href="<?=$admin_link?>/subscriber"><?=show_static_text($adminLangSession['lang_id'],187);?></a></li>	
+		<li><a href="<?=$admin_link?>/subscriber/view_list">View Email Listing</a></li>		
     </ul>
 </li>
 
@@ -352,7 +359,7 @@ if($admin_details->is_payment==1){
 <li <?php echo $active=='Payment History'?'class="active"':''; ?>>
     <a href="<?=$admin_link?>/payment_history" target="">
     <i class="fa fa-history"></i>
-    <span class="title">Paymant History<?=show_static_text($adminLangSession['lang_id'],4704);?></span>
+    <span class="title">Payment History<?=show_static_text($adminLangSession['lang_id'],4704);?></span>
     </a>
 </li>
 <?php

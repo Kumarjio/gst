@@ -26,6 +26,7 @@ if($set_product['type']=='travelpayouts'){
    </div>
         </div>
 		<p style="margin-top:10px;font-size:14px;"><?=$set_product['address']?></p>
+		<!--<input type="text" value="<?=$set_product['address']?>" id="latlng">-->
         
 
     </div>

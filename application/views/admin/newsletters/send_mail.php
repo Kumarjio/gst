@@ -6,6 +6,7 @@
                 <h4 class="panel-title"><?=$name?></h4>
             </div>
             <div class="panel-body">
+
     	        <?php echo validation_errors();?>
         <?=form_open(NULL, array('class' => 'form-horizontal', 'role'=>'form','enctype'=>"multipart/form-data"))?>
                    
@@ -13,29 +14,25 @@
             	<div class="form-group">
                         <label class="col-lg-2 col-md-2 col-sm-2 control-label"><?=show_static_text($adminLangSession['lang_id'],18);?></label>
                         <div class="col-md-10 col-lg-10">
-							<select id="user_email" multiple="multiple" class="multiselect populate placeholder form-control user-list" name="email[]" required>
+								
+							<select id="user_email"  class="form-control user-list" name="email" required>
+							<option>Select Subscriber List</option>
 
-<?php
-$selectUser = unserialize($news->user_id);
-$user_data  = $this->comman_model->get('newsletters',false);
-if(count($user_data)){
-	foreach($user_data as $set_user){
-		if(!empty($set_user)){
-		if(!empty($selectUser)&&in_array($set_user->email,$selectUser)){
-?>
-		<option value="<?php echo $set_user->email; ?>"  selected="selected" ><?php echo $set_user->email; ?></option>
-<?php
-		}
-		else{
-?>
-		<option value="<?php echo $set_user->email; ?>" ><?php echo $set_user->email; ?></option>
+	<?php
+ if(count($listing)){
+	$i=1;
+	foreach($listing as $set_data){
+	//	echo "<pre>";
+ //print_r($set_data); $i++; 
+ 
+ ?>
+		<option value="<?php echo $set_data->Id; ?>"><?php echo $set_data->list_title; ?></option>
 <?php
 		}
-?>
-<?php
+
 		}
-	}
-}
+	
+
 ?>
 							</select>                            
                         </div>

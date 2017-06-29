@@ -21,8 +21,9 @@
                                <img src="<?php echo !isset($settings['background_b1']) ? 'assets/uploads/no-image.gif' :base_url('assets/images').'/'.$settings['background_b1']; ?>" id="background-b1-img"/>
                             </div>
 							<div>
-						    <span class="btn btn-default btn-file"><span class="fileinput-new"><?=show_static_text($adminLangSession['lang_id'],159);?></span><span class="fileinput-exists"><?=show_static_text($adminLangSession['lang_id'],160);?></span>
-    	    	            <input type="file" name="background_b1" id="logo"></span>
+						    <!--<span class="btn btn-default btn-file"><span class="fileinput-new"><?=show_static_text($adminLangSession['lang_id'],159);?></span><span class="fileinput-exists"><?=show_static_text($adminLangSession['lang_id'],160);?></span>
+							<input type="file" name="background_b1" id="logo"></span>-->
+							<input type="button" name="background_b1" id="logo" value="Select image" data-toggle="modal" data-target="#myModal"></span>
 						    <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput"><?=show_static_text($adminLangSession['lang_id'],109);?></a>
 <?php
 if(!empty($settings['background_b1'])){

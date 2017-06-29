@@ -26,6 +26,7 @@ if($places){
     <a href="<?=!empty($set_place->link)?$set_place->link:'hotels?city='.$set_place->name.'&in_date='.date('d-m-Y').'&out_date='.date('d-m-Y')?>">
         <div class="case-studies-summary">
             <h2><?=$set_place->name?></h2>
+            <h3><?=$set_place->desc?></h3>
         </div>
     </a>
 </li>

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 	<head>
+	<meta name="verification" content="b18af667014824a7a15832cc1f099796" />
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<base href="<?php echo base_url();?>">
@@ -36,6 +37,12 @@
 	<script src="assets/frontend/js/bootstrap-datepicker.min.js"></script>
 	<script src="assets/frontend/js/classie.js"></script>
 	<script src="assets/frontend/js/selectFx.js"></script>
-	<script src="gofly/js/gstmain.js"></script>
-	<?=$settings['analytic_code'];?>
+	<script src="gofly/js/gstmainweb.js"></script>
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W364489');</script>
+<!-- End Google Tag Manager -->
 	</head>

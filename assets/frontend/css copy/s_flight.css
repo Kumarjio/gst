@@ -1,0 +1,737 @@
+#advance-search-form .col-md-2 {
+	padding:0 2px;
+}
+
+#advance-search-form .text-field-box{
+	width:23% ;
+}
+
+#advance-search-form .date-field-box{
+	width:10%;
+}
+#advance-search-form .f-row{
+	margin:0;
+}
+
+@media (max-width: 990px) {
+	#advance-search-form .text-field-box,
+	#advance-search-form .date-field-box{
+		width:100%;
+	}
+}
+
+@media (max-width: 768px) {
+	#advance-search-form .text-field-box,
+	#advance-search-form .date-field-box{
+	  width: 100%;
+	}
+}
+
+/*.search-wrapper  .search-content {
+  width: 1015px;
+}
+
+@media (max-width: 768px) {
+	.search-wrapper .search-content{
+		width: 750px !important;
+	}
+}
+*/
+.left-side-box,
+.right-side-box{
+  position: relative;
+  min-height: 1px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+/*.left-side-box{
+  padding-left: 5px;
+  padding-right: 2px;
+}
+.right-side-box{
+  padding-left:2px;
+  padding-right: 5px;
+}*/
+
+.left-side-box,
+.right-side-box{
+  float: none;
+  width:100%;
+}
+
+
+@media (min-width: 768px) {
+	.left-side-box,
+	.right-side-box{
+		float: none;
+		width:100%;
+	}
+	.left-side-box{
+	  padding-left: 5px;
+	  padding-right: 2px;
+	}
+	.right-side-box{
+	  padding-left:2px;
+	  padding-right: 5px;
+	}
+
+}
+@media (min-width: 992px) {
+	.search-wrapper #advance-search-form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+	.left-side-box,
+	.right-side-box{
+		float: left;
+	}
+
+	.left-side-box{
+		width: 20%;
+	}
+	
+	.right-side-box{
+		width: 80%;
+	}
+}
+
+
+@media (min-width: 768px) {
+	.search-wrapper .search-content{
+		width: 750px;
+	}
+}
+@media (min-width: 992px) {
+	.search-wrapper .search-content{
+	    width: 970px;
+	}
+
+}
+@media (min-width: 1200px) {
+	.search-wrapper .search-content{
+		width: 1015px;
+	}
+}
+
+
+/* =======================================================
+*
+* passenger
+*
+* ======================================================= */
+
+.passenger {
+	background: #fff none repeat scroll 0 0;
+	color: #000;
+	padding: 3px 10px;
+}
+.passenger a{
+	color: #000;
+	width:100%;
+}
+
+.passenger .bootstrap-touchspin{
+	float:right;
+	width:26%;
+}
+.passenger .bootstrap-touchspin .btn{
+	border:none !important;
+	border-radius:0;
+}
+.passenger .mega-dropdown-menu{
+	min-width:260px;
+	border-radius:0;
+	padding:10px;
+}
+
+.bootstrap-touchspin input[type="text"]{
+	padding:5px 8px !important;
+	height:30px !important;
+}
+
+
+.passenger .child-age-content,
+.passenger .child-age-content:before,
+.passenger .child-age-content:after{
+	clear:both;
+}
+
+.passenger .child-box-content{
+	border-top:1px solid#CCC;
+	padding-top:10px;
+}
+.passenger .child-box-content .child-age-content{
+	display:none;
+}
+
+.passenger  .child-box-content .child-age-content.active{
+	display:block;
+}
+
+
+@media (max-width: 768px) {
+	.passenger {
+		float:right;
+		width:55%;
+	}
+}
+
+
+
+
+/* =======================================================
+*
+* side-content
+*
+* ======================================================= */
+
+
+.side-content .slider.slider-horizontal .slider-track {
+  height: 4px;
+  margin-top: -4px;
+}
+
+.side-content .slider-track{
+	background-image: linear-gradient(to bottom, #675B72 0px, #675B72 100%);
+/*	background-color: #675B72 !important;*/
+}
+.side-content .slider-handle{
+	height:15px;
+	width:15px;
+	background-color: #FFF;
+	background-image: linear-gradient(to bottom, #FFF 0px, #FFF 100%);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.side-content .slider-selection{
+	background:#ff9900;
+}
+
+.side-content .side-c{
+	border-bottom: 1px solid #59497D;
+	padding-bottom:10px;
+}
+.side-content .star-radio,
+.side-content .stop-radio{
+	width:100%;
+}
+
+.side-content .star-radio .fa{
+	margin-right:5px;
+	font-size:14px;
+}
+
+.side-content .stop-radio label{
+	font-size:12px;
+	color:#CCC;
+}
+
+.side-content .side-c .l-title {
+	color:#FFF;
+	font-size:13px;
+	font-weight:normal;
+}
+
+.side-content .case-header .items {
+  font-size: 11px;
+  font-weight:normal;
+}
+
+/* =======================================================
+*
+* search-form-wp 
+*
+* ======================================================= */
+
+.search-form-wp .search-btns{
+	margin-top:30px;
+/*	float:right;*/
+}
+@media (max-width: 768px) {
+	.search-form-wp .search-btns{
+		margin-top:0;
+/*		float:none;*/
+	}
+}
+
+
+.search-content .col-md-3,
+.search-content .col-md-9{
+	padding-left:5px;
+	padding-right:5px;
+}
+.search-form-wp .btn{
+	padding:5px 10px;
+}
+.sidebox-container{
+	background:#251435;
+	color:#FFF;
+}
+
+.leftBanner, .rightBanner {
+  position: absolute !important;
+  top: 185px !important;
+}
+
+
+
+
+
+/* =======================================================
+*
+* filter-page__content
+*
+* ======================================================= */
+
+.flight-item .item-price-more:after,
+.trip-item .item-price-more:after,
+.attraction-item .item-price-more:after,
+.hotel-item .item-price-more:after {
+    display: block;
+    position: none;
+    border-left: none;
+}
+
+
+.filter-page__content .flight-item{
+  min-height: 145px;
+}
+.filter-page__content .flight-item .item-body {
+  width: 78%;
+}
+.filter-page__content .flight-item .item-price-more{
+  width: 21%;
+}
+
+.filter-page__content .top-airline-title{
+	font-size:11px;
+	margin-bottom:0;
+}
+
+.filter-page__content .item-table .airline{
+	width:20%;
+}
+.filter-page__content .item-table .origin-route{
+	width:30%;
+}
+
+.filter-page__content .item-table .route-time{
+	width:20%;
+}
+
+.filter-page__content .item-table .destination-route{
+	width:30%;
+}
+
+.filter-page__content .item-price-more{
+	margin:0;
+	background:#E8F0F3;
+}
+
+.filter-page__content .return-trip .item-price-more{
+	min-height:274px;
+	padding:5px;
+}
+
+.filter-page__content .single-trip .item-price-more{
+	min-height:168px;
+	padding:5px;
+}
+.filter-page__content .item-price-more .ratings-data{
+	font-size:20px;
+}
+
+.filter-page__content .item-price-more .ratings-data{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+.filter-page__content .item-price-more .ratings-data .item {
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+}
+
+
+
+
+.filter-page__content .item-price-more .view-link{
+  bottom: 5px;
+  position: absolute;
+  width: 142px;
+}
+
+.filter-page__content .item-price-more .view-link .btn-green{
+	margin-top:0;
+	padding:5px 2px;	
+}
+@media (max-width: 768px) {
+	.filter-page__content .flight-item .item-body,
+	.filter-page__content .flight-item .item-price-more{
+	  width: 100%;
+	  float:none;
+	}
+
+.filter-page__content .item-price-more .view-link {
+	position:inherit;
+	width:auto;
+	min-height:auto !important;
+}
+.filter-page__content .return-trip .item-price-more,
+.filter-page__content .single-trip .item-price-more{
+	min-height:auto !important;
+}
+.filter-page__content .wishlist.item{
+	text-align:left
+}
+
+}
+
+
+/* =======================================================
+*
+* flight-item
+*
+* ======================================================= */
+.flight-item{
+	margin-bottom: 5px;
+	background:#F4F7F8;
+}
+
+.flight-item .img-skyscanner,
+.flight-item .img-travelpayout{	
+	width:110px;
+	height:30px;
+}
+.flight-item .img-skyscanner
+{
+	margin-top:10px;
+}
+
+.flight-item .border-dott-right{
+	border-right:2px dotted #d4d4d4
+}
+.flight-item td{
+	color:#000;
+}
+.flight-item p{
+	margin-bottom:0
+}
+.flight-item .airline,
+.flight-item .route{
+border-right:2px dotted #d4d4d4
+}
+.flight-item .item-table td{
+	padding:4px 10px !important;
+}
+.flight-item .item-table .flight-title{
+	font-weight:bold;
+}
+
+.flight-item .flight-table{
+	border-bottom:1px solid #CCC;
+	padding-bottom:10px;
+}
+.flight-item .no-border{
+	margin-top:10px;
+	border-bottom:none;
+}
+.flight-item .item-price-more .price .amount{
+    color: #ff9900 ;
+}
+.flight-item.travelpayouts .item-media .image-cover img {
+    width: 100%;
+    height: 85px;
+}
+.flight-item.skyscanner .item-media .image-cover img {
+    width: 100%;
+    height: 105px;
+}
+
+@media (max-width: 768px) {
+/*	.flight-item .item-media,
+	.flight-item .item-body,
+	.flight-item .item-price-more{
+		float:none;
+		width:100%;
+	}*/
+	
+	.flight-item .item-price-more{
+		text-align:center;
+	}
+	.flight-item .item-price-more .btn{
+		width: 100%;
+	}
+	
+	.flight-item .item-price-more:after{
+		border-left: none;
+	}
+	
+	.flight-item .item-media .image-cover{
+		text-align:center;
+	
+	}
+	.flight-item .item-media .image-cover img {
+		width: 50% !important;
+		height: 105px !important;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.search-wrapper .filter-page__content{
+	min-height:390px;
+}
+.rating-sm {
+  font-size: 1.8em;
+}
+
+.ajax-loading{
+	display:none;
+	text-align:center;
+}
+
+.search-form-wp{
+	padding:0 20px ;
+	background:#ff9900;
+	position:fixed;
+	width:100%;
+}
+.search-form-wp label{
+	color:#000;
+	font-weight:normal;
+	font-size:14px;
+		
+}
+.search-form-wp .labels{
+	color:#FFF;
+	font-size:14px;
+}
+.search-form-wp input[type="text"] {
+  background: #FFF;
+  border: none;
+  box-shadow: none;
+  font-weight: normal;
+  font-size: 13px;
+  padding: 5px 4px !important;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  color: #000 !important;
+  height:32px;
+}
+
+.search-form-wp div.cs-skin-border {
+	background: transparent;
+	max-width: 130px;
+}
+
+.search-form-wp div.cs-select span {
+  padding: 4px;
+}
+
+.search-form-wp .cs-skin-border > span {
+  background: transparent;
+  border: medium none transparent;
+  color: #FFF;
+}
+.search-form-wp div.adult-select {
+	background: #FFF;
+}
+.search-form-wp .adult-select span {
+  padding: 10px 4px !important;
+}
+
+.search-form-wp .adult-select > span {
+  background: transparent none repeat scroll 0 0;
+  color: #000 !important;
+}
+
+.search-wrapper .search-content{
+	padding-top:110px;
+}
+@media screen and (max-width: 991px) {
+.search-form-wp{
+	padding:0 20px ;
+	background:#ff9900;
+	position:inherit;
+	width:100%;
+}
+
+.search-wrapper .search-content{
+	padding-top:0px;
+}
+}
+.search-form-wp div.adult-select {
+	background: #FFF;
+	display:block;
+}
+
+.search-form-wp .adult-select span {
+  padding: 6px 4px !important;
+}
+
+.search-form-wp .adult-select > span {
+  background: transparent none repeat scroll 0 0;
+  color: #000 !important;
+  font-weight:normal;
+}
+
+
+.rating-sm {
+  font-size: 1.8em;
+}
+
+
+
+
+
+
+
+
+
+
+.margin-bottom-10{
+	margin-bottom:10px;
+}
+.glyphicon { margin-right:5px; }
+.thumbnail
+{
+    margin-bottom: 20px;
+    padding: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.item.list-group-item
+{
+    float: none;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.item.list-group-item:nth-of-type(odd):hover,.item.list-group-item:hover
+{
+    background: #428bca;
+}
+
+.item.list-group-item .list-group-image
+{
+    margin-right: 10px;
+}
+.item.list-group-item .thumbnail
+{
+    margin-bottom: 0px;
+}
+.item.list-group-item .caption
+{
+    padding: 9px 9px 0px 9px;
+}
+.item.list-group-item:nth-of-type(odd)
+{
+    background: #eeeeee;
+}
+
+.item.list-group-item:before, .item.list-group-item:after
+{
+    display: table;
+    content: " ";
+}
+
+.item.list-group-item img
+{
+    float: left;
+}
+.item.list-group-item:after
+{
+    clear: both;
+}
+.list-group-item-text
+{
+    margin: 0 0 11px;
+}
+
+@media (max-width: 768px) {
+	.search-form-wp  form .btn{
+		padding:4px;
+		display:block;
+		width:100%;
+		margin-right:0 !important;
+	}
+
+
+}
+
+@media (max-width: 768px) {
+	.search-form-wp {
+		padding-top:10px;
+	}
+	.search-form-wp label{
+		width:40%;
+	}
+/*	.search-form-wp select, .search-form-wp  input[type="text"] {
+		  float: right;
+		  width: 55%;
+	}*/
+	.search-form-wp .input-group{
+	
+		  float: right;
+		  width: 55%;
+	}
+	.search-form-wp  .adult-select{
+	  float: right;
+	  width: 55%;
+	}
+}
+
+.stop {
+	border-bottom:solid 2px #0ca7c6;
+	width:100%;
+	display:block;
+	text-align:center;
+}
+/*.stops:before,
+.stops:after,
+.stops .stop{display:table-cell;height:inherit;vertical-align:middle}
+
+.stops:before,
+.stops:after{content:' ';overflow:hidden;white-space:nowrap}
+*/
+
+
+/*.stops:before,
+.stops:after,
+.stops .stop
+{display:table-cell;height:inherit;vertical-align:middle}
+.stops:before,
+.stops:after{
+	content:'-----';overflow:hidden;white-space:nowrap}
+	
+.stops .stop{width:15px;text-align:center;overflow:hidden}
+.stops .stop:before{content:'\e840\e842\e840';display:inline-block;position:relative;left:-10px;text-align:center;width:36px;height:inherit}
+.stops .stop.overnight:before{content:'\e840\e841\e840'}
+*/
+
+
+.side-content{
+	padding:13px 20px !important;
+}

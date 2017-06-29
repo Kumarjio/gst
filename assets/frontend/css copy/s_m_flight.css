@@ -1,0 +1,537 @@
+#advance-search-form .col-md-2 {
+	padding: 0 2px;
+}
+#advance-search-form .text-field-box {
+	width: 23%;
+}
+#advance-search-form .date-field-box {
+	width: 10%;
+}
+#advance-search-form .f-row {
+	margin: 0;
+}
+#advance-search-form .input-group {
+	width: 100%;
+}
+#advance-search-form .input-group-addon {
+	position: absolute;
+	top: 0;
+	z-index: 3;
+}
+
+@media (max-width: 990px) {
+#advance-search-form .text-field-box, #advance-search-form .date-field-box {
+	width: 100%;
+}
+}
+
+@media (max-width: 768px) {
+#advance-search-form .text-field-box, #advance-search-form .date-field-box {
+	width: 100%;
+}
+}
+.typeahead.dropdown-menu {
+	border-radius: 0;
+}
+.typeahead.dropdown-menu a {
+	padding: 10px 4px;
+	font-size: 14px;
+	clear: both;
+}
+.typeahead.dropdown-menu .active a {
+	background: #ff9900;
+}
+.typeahead.dropdown-menu a strong {
+	color: #ffc229;
+}
+.typeahead.dropdown-menu .no-margin {
+	margin: 0;
+}
+.min-height {
+	min-height: 640px;
+	position: relative;
+}
+
+@media (max-width: 768px) {
+.min-height {
+	min-height: 50px;
+	position: relative;
+}
+}
+.leftBanner, .rightBanner {
+	position: absolute !important;
+	top: 10px !important;
+}
+.search-main-wrapper .search-tab {
+	background: #000;
+}
+.search-main-wrapper .search-tab li a {
+	color: #ff9900;
+	/*	color:#f78536;*/
+	padding: 7px 5px !important;
+	text-transform: uppercase;
+	font-size: 14px;
+	min-height: 35px;
+}
+.search-main-wrapper .search-tab li a:hover {
+	background: #ff9900;
+	color: #FFF;
+}
+.search-main-wrapper .search-tab .active a {
+	background: #ff9900 !important;
+}
+.search-main-wrapper .search-tab .icons-png {
+	height: 15px;
+	width: 16px;
+	display: inline-block;
+}
+.search-main-wrapper .search-tab .icons-png.car {
+	background-image: url('../images/icons/car.png');
+}
+.search-main-wrapper .search-tab li.active .icons-png.car, .search-main-wrapper .search-tab li:hover .icons-png.car {
+	background-image: url('../images/car.png');
+}
+.search-main-wrapper .search-tab .icons-png.hotel {
+	background-image: url('../images/icons/hotel.png');
+}
+.search-main-wrapper .search-tab li.active .icons-png.hotel, .search-main-wrapper .search-tab li:hover .icons-png.hotel {
+	background-image: url('../images/hotel.png');
+}
+.search-main-wrapper .search-tab .icons-png.flight {
+	background-image: url('../images/icons/flight.png');
+}
+.search-main-wrapper .search-tab li.active .icons-png.flight, .search-main-wrapper .search-tab li:hover .icons-png.flight {
+	background-image: url('../images/flight.png');
+}
+.search-main-wrapper .search-tab .icons-png.holiday {
+	background-image: url('../images/icons/holiday.png');
+}
+.search-main-wrapper .search-tab li.active .icons-png.holiday, .search-main-wrapper .search-tab li:hover .icons-png.holiday {
+	background-image: url('../images/holiday.png');
+}
+.search-main-wrapper .search-tab .icons-png.i-0 {
+	background-image: url('../images/icons/hajj.png');
+}
+.search-main-wrapper .search-tab li.active .icons-png.i-0, .search-main-wrapper .search-tab li:hover .icons-png.i-0 {
+	background-image: url('../images/hajj.png');
+}
+.search-main-wrapper .search-tab .icons-png.i-1 {
+	background-image: url('../images/icons/hand.png');
+}
+.search-main-wrapper .search-tab li.active .icons-png.i-1, .search-main-wrapper .search-tab li:hover .icons-png.i-1 {
+	background-image: url('../images/hand.png');
+}
+.search-main-wrapper .search-tab .icons-png.i-2 {
+	background-image: url('../images/icons/notepad.png');
+}
+.search-main-wrapper .search-tab li.active .icons-png.i-2, .search-main-wrapper .search-tab li:hover .icons-png.i-2 {
+	background-image: url('../images/notepad.png');
+}
+.search-main-wrapper .search-tab .icons-png.i-3 {
+	background-image: url('../images/icons/cruises.png');
+}
+.search-main-wrapper .search-tab li.active .icons-png.i-3, .search-main-wrapper .search-tab li:hover .icons-png.i-3 {
+	background-image: url('../images/cruises.png');
+}
+
+@media (max-width: 768px) {
+.search-tab.nav-justified > li, .search-tab.nav-justified > li {
+	display: table-cell;
+	width: 1%;
+}
+.search-tab > li > a {
+	border-radius: 0 !important;
+	margin-bottom: 0 !important;
+}
+}
+.search-form-wp {
+	padding: 0 20px;
+	background: #ff9900;
+}
+.search-form-wp label {
+	color: #000;
+	font-weight: normal;
+	font-size: 14px;
+}
+.search-form-wp .labels {
+	color: #FFF;
+	font-size: 14px;
+}
+.search-form-wp input[type="text"] {
+	background: #FFF;
+	border: none;
+	box-shadow: none;
+	font-weight: normal;
+	font-size: 13px;
+	padding: 3px 5px 4px 27px !important;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	border-radius: 0;
+	color: #000 !important;
+	height: 32px;
+}
+.search-form-wp div.cs-skin-border {
+	background: transparent;
+	max-width: 130px;
+}
+.search-form-wp div.cs-select span {
+	padding: 4px;
+}
+.search-form-wp .cs-skin-border > span {
+	background: transparent;
+	border: medium none transparent;
+	color: #FFF;
+}
+.search-form-wp div.adult-select {
+	background: #FFF;
+}
+.search-form-wp .adult-select span {
+	padding: 10px 4px !important;
+}
+.search-form-wp .adult-select > span {
+	background: transparent none repeat scroll 0 0;
+	color: #000 !important;
+}
+.search-wrapper .search-content {
+	padding-top: 120px;
+}
+
+@media screen and (max-width: 991px) {
+.search-form-wp {
+	padding: 0 20px;
+	background: #f78536;
+	position: inherit;
+	width: 100%;
+}
+.search-wrapper .search-content {
+	padding-top: 0px;
+}
+}
+.search-form-wp div.adult-select {
+	background: #FFF;
+	display: block;
+}
+.search-form-wp .adult-select span {
+	padding: 6px 4px !important;
+}
+.search-form-wp .adult-select > span {
+	background: transparent none repeat scroll 0 0;
+	color: #000 !important;
+	font-weight: normal;
+}
+.passenger {
+	background: #fff none repeat scroll 0 0;
+	color: #000;
+	padding: 3px 10px;
+}
+.passenger a {
+	color: #000;
+	width: 100%;
+}
+.passenger .bootstrap-touchspin {
+	float: right;
+	width: 26%;
+}
+.passenger .bootstrap-touchspin .btn {
+	border: none !important;
+	border-radius: 0;
+}
+.passenger .mega-dropdown-menu {
+	min-width: 260px;
+	border-radius: 0;
+	padding: 10px;
+}
+.bootstrap-touchspin input[type="text"] {
+	padding: 5px 8px !important;
+	height: 30px !important;
+}
+.passenger .child-age-content, .passenger .child-age-content:before, .passenger .child-age-content:after {
+	clear: both;
+}
+.passenger .child-box-content {
+	border-top: 1px solid#CCC;
+	padding-top: 10px;
+}
+.passenger .child-box-content .child-age-content {
+	display: none;
+}
+.passenger .child-box-content .child-age-content.active {
+	display: block;
+}
+
+@media (max-width: 768px) {
+.passenger {
+	float: right;
+	width: 55%;
+}
+}
+.side-content .slider.slider-horizontal .slider-track {
+	height: 4px;
+	margin-top: -4px;
+}
+.side-content .slider-track {
+	background-image: linear-gradient(to bottom, #675B72 0px, #675B72 100%);/*	background-color: #675B72 !important;*/
+}
+.side-content .slider-handle {
+	height: 15px;
+	width: 15px;
+	background-color: #FFF;
+	background-image: linear-gradient(to bottom, #FFF 0px, #FFF 100%);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.side-content .slider-selection {
+	background: #f78536;
+}
+.side-content .side-c {
+	border-bottom: 1px solid #59497D;
+	padding-bottom: 10px;
+}
+.side-content .star-radio, .side-content .stop-radio {
+	width: 100%;
+}
+.side-content .star-radio .fa {
+	margin-right: 5px;
+	font-size: 14px;
+}
+.side-content .stop-radio label {
+	font-size: 12px;
+	color: #CCC;
+}
+.side-content .side-c .l-title {
+	color: #FFF;
+	font-size: 14px;
+	font-weight: normal;
+}
+.side-content .case-header .items {
+	font-size: 11px;
+	font-weight: normal;
+}
+.search-form-wp .search-btns {
+	margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+.search-form-wp .search-btns {
+margin-top: 0;
+}
+}
+.search-content .col-md-3, .search-content .col-md-9 {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.search-form-wp .btn {
+	padding: 5px 10px;
+}
+.sidebox-container {
+	background: #251435;
+	color: #FFF;
+}
+.flight-item .border-dott-right {
+	border-right: 2px dotted #d4d4d4
+}
+.flight-item td {
+	color: #000;
+}
+.flight-item p {
+	margin-bottom: 0
+}
+.flight-item .airline, .flight-item .route {
+	border-right: 2px dotted #d4d4d4
+}
+.flight-item .item-table td {
+	padding: 4px 10px !important;
+}
+.flight-item .item-table .flight-title {
+	font-weight: bold;
+}
+.flight-item .flight-table {
+	border-bottom: 1px solid #CCC;
+	padding-bottom: 10px;
+}
+.flight-item .no-border {
+	margin-top: 10px;
+	border-bottom: none;
+}
+.flight-item .item-price-more .price .amount {
+	color: #f78536;
+}
+.search-wrapper .filter-page__content {
+	min-height: 390px;
+}
+.rating-sm {
+	font-size: 1.8em;
+}
+.ajax-loading {
+	display: none;
+	text-align: center;
+}
+.rating-sm {
+	font-size: 1.8em;
+}
+.flight-item.travelpayouts .item-media .image-cover img {
+	width: 100%;
+	height: 85px;
+}
+.flight-item.skyscanner .item-media .image-cover img {
+	width: 100%;
+	height: 105px;
+}
+.margin-bottom-10 {
+	margin-bottom: 10px;
+}
+.glyphicon {
+	margin-right: 5px;
+}
+.thumbnail {
+	margin-bottom: 20px;
+	padding: 0px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+.item.list-group-item {
+	float: none;
+	width: 100%;
+	background-color: #fff;
+	margin-bottom: 10px;
+}
+.item.list-group-item:nth-of-type(odd):hover, .item.list-group-item:hover {
+	background: #428bca;
+}
+.item.list-group-item .list-group-image {
+	margin-right: 10px;
+}
+.item.list-group-item .thumbnail {
+	margin-bottom: 0px;
+}
+.item.list-group-item .caption {
+	padding: 9px 9px 0px 9px;
+}
+.item.list-group-item:nth-of-type(odd) {
+	background: #eeeeee;
+}
+.item.list-group-item:before, .item.list-group-item:after {
+	display: table;
+	content: " ";
+}
+.item.list-group-item img {
+	float: left;
+}
+.item.list-group-item:after {
+	clear: both;
+}
+.list-group-item-text {
+	margin: 0 0 11px;
+}
+
+@media (max-width: 768px) {
+.search-form-wp form .btn {
+	padding: 4px;
+	display: block;
+	width: 100%;
+	margin-right: 0 !important;
+}
+.flight-item .item-media, .flight-item .item-body, .flight-item .item-price-more {
+	float: none;
+	width: 100%;
+}
+.flight-item .item-price-more {
+	text-align: center;
+}
+.flight-item .item-price-more .btn {
+	width: 100%;
+}
+.flight-item .item-price-more:after {
+	border-left: none;
+}
+.flight-item .item-media .image-cover {
+	text-align: center;
+}
+.flight-item .item-media .image-cover img {
+	width: 50% !important;
+	height: 105px !important;
+}
+}
+
+@media (max-width: 768px) {
+.search-form-wp {
+	padding-top: 10px;
+}
+.search-form-wp label {
+	width: 40%;
+}
+.search-form-wp .input-group {
+	float: right;
+	width: 55%;
+}
+.search-form-wp .adult-select {
+	float: right;
+	width: 55%;
+}
+}
+.bootstrap-select {
+	width: 100% !important;
+}
+.bootstrap-select .dropdown-toggle {
+	padding: 6px 25px;
+	border-radius: 0;
+	border: none;
+}
+.btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle .bootstrap-select .dropdown-toggle:hover, .bootstrap-select .dropdown-toggle:focus, .bootstrap-select .dropdown-toggle {
+	background: #FFF !important;
+	color: #000 !important;
+	box-shadow: none !important;
+}
+
+@media (max-width: 768px) {
+.bootstrap-select {
+	width: 55% !important;
+	float: right !important;
+}
+}
+.search-section {
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+}
+.typeahead-devs, .tt-hint, .country, .allcountry {
+	border: 2px solid #cccccc;
+	border-radius: 8px;
+	font-size: 14px;
+	height: 44px;
+	line-height: 30px;
+	outline: medium none;
+	padding: 8px 18.4px;
+	width: 100%;
+}
+.tt-dropdown-menu {
+	width: 400px;
+	margin-top: 5px;
+	padding: 8px 12px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 8px 8px 8px 8px;
+	font-size: 18px;
+	color: #111;
+	background-color: #F1F1F1;
+}
+.search-wrapper .filter-page__content {
+	min-height: 230px;
+}
+.ajax-loading {
+	display: none;
+	text-align: center;
+}
+.center-content {
+	width: 52%;
+	margin: 20px auto;
+	padding: 10px;
+}
+.searchContainer {
+	background: url('/assets/images/searchflights.jpg') center center no-repeat;
+	background-size: cover;
+	padding: 80px 0;
+	min-height: 320px;
+}

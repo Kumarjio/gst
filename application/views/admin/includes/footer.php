@@ -152,6 +152,12 @@ jQuery(document).ready(function() {
 <?php
 }
 ?>
+<script>
+$("#clr").click(function(){
+/* Single line Reset function executes on click of Reset Button */
+$(".sub_list").reset();
+});
+</script>
 
 <!-- END JAVASCRIPTS -->
 

@@ -15,9 +15,9 @@
         </a>
 			    <a href="<?=$_edit?>" class="btn btn-primary m-r-5 m-b-5"><?=show_static_text($adminLangSession['lang_id'],233);?> <i class="fa fa-plus"></i></a>
         </a>
-        <a href="<?=$_cancel.'/add';?>"class="btn btn-primary ">
+      <!--  <a href="<?=$_cancel.'/add';?>"class="btn btn-primary ">
         Create New Mailing list <i class="fa fa-plus"></i>
-        </a>
+        </a>-->
     </div>
 	    </div>
     </div>  

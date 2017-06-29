@@ -1,0 +1,310 @@
+/* =======================================================
+*
+* aa-language
+*
+* ======================================================= */
+.aa-language .dropdown-menu{
+	background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+	color: #fff;
+	min-width: 35px;
+}
+.aa-language .dropdown-menu a{
+	color: #fff;
+	padding:4px 12px;
+}
+
+
+/* =======================================================
+*
+* bootstrap slider
+*
+* ======================================================= */
+.search-form-wp .input-group-addon{
+	background:#FFF;
+	border: medium none;
+	border-radius: 0;
+	padding: 8px 11px;
+}
+
+
+
+
+.login-wrapper{
+	padding:30px 0;
+}
+
+#fh5co-tours .heading-section {
+	margin-bottom:25px;
+}
+
+/* =======================================================
+*
+* bootstrap slider
+*
+* ======================================================= */
+
+.mobile-menu-user-list{
+	display:none;
+}
+
+@media (max-width: 768px) {
+	.right-menu {
+        margin-right:30px;
+    }
+	.contact-details{
+		display:none;
+	}
+.mobile-menu-user-list{
+	display:block;
+}
+}
+
+
+.btn-green{
+  background: #39bd55!important;
+  color: #fff;
+  border: none !important;
+  border: 2px solid transparent !important;
+}
+.btn-green:hover, .btn-green:active, .btn-green:focus {
+  box-shadow: none;
+  background: #21a33d;
+  color: #fff !important;
+}
+.btn-sys{
+  /*background: #de6c1d !important;*/background: #000 !important;
+  color: #fff;
+  border: none !important;
+  border: 2px solid transparent !important;
+}
+.btn-sys:hover, .btn-sys:active, .btn-sys:focus {
+  box-shadow: none;
+  background: #F78536;
+  color: #fff !important;
+}
+
+.btn-blck-sys{
+  background: #000 !important;
+  color: #fff;
+  border: none !important;
+  border: 2px solid transparent !important;
+}
+.btn-blck-sys:hover, .btn-blck-sys:active, .btn-blck-sys:focus {
+  box-shadow: none;
+  background: #F78536;
+  color: #fff !important;
+}
+
+
+
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+@media (min-width: 768px) {
+.col-sm-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+    }
+}
+
+
+.leftBanner, .rightBanner {
+  position: absolute;
+  top: 70px ;
+}
+
+.leftBanner {
+  left: 6px;
+}
+.rightBanner {
+  right: 6px;
+}
+
+@media screen and (max-width: 991px) {
+.leftBanner, .rightBanner {
+	display:none !important;
+}
+}
+
+@media (min-width: 768px) {
+	.search-content{
+		width: 750px;
+	}
+}
+@media (min-width: 992px) {
+	.search-content{
+	    width: 970px;
+	}
+
+}
+@media (min-width: 1200px) {
+	.search-content{
+		width: 948px;
+	}
+}
+
+
+.sidebox-container {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(41, 51, 57, 0.5);
+  margin-bottom: 8px;
+  padding:10px;
+  z-index:1;
+}
+.sidebox-container .side-c{
+	margin-bottom:30px;
+}
+.sidebox-container .side-c .l-title{
+	margin-bottom:5px;
+	font-weight:bold
+}
+
+.sidebox-container .case-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+.sidebox-container .case-header .items {
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+	font-size:12px;
+	
+}
+
+
+
+/* =======================================================
+*
+* 	search 
+*
+* ======================================================= */
+
+
+.search-wrapper .nav-tabs { /*border-bottom: 2px solid #CCC !important*/;justify-content:space-between;background:transparent;/*margin-bottom:10px;*/ }
+.search-wrapper .nav-tabs > li.active > a,
+.search-wrapper .nav-tabs > li.active > a:focus,
+.search-wrapper .nav-tabs > li.active > a:hover { border-width: 0; }
+.search-wrapper .nav-tabs > li > a { border: none; color: #393939;font-size:17px }
+.search-wrapper .nav-tabs > li.active > a,
+.search-wrapper .nav-tabs > li.active > a:hover,
+.search-wrapper .nav-tabs > li > a:hover { border: none; color: #fff !important; background: transparent; }
+.search-wrapper .nav-tabs > li > a::after { content: ""; height: 2px; position: absolute; width: 100%; left: 0px; bottom: -1px; transition: all 250ms ease 0s; transform: scale(0); }
+.search-wrapper .nav-tabs > li.active > a::after,
+.search-wrapper .nav-tabs > li:hover > a::after { transform: scale(1); }
+.search-wrapper .tab-nav > li > a::after { background: #21527d none repeat scroll 0% 0%; color: #fff; }
+.search-wrapper .tab-pane { padding: 15px 0; }
+.search-wrapper .tab-content{padding:20px 13px;background:transparent}
+.search-wrapper .card {margin-bottom: 30px; }
+
+.search-wrapper .card .nav-tabs{
+	border-bottom:none;
+}
+
+
+
+
+
+/* =======================================================
+*
+* 	search 
+*
+* ======================================================= */
+.margin-top-10{
+	margin-top:10px;
+}
+.margin-top-20{
+	margin-top:20px;
+}
+.margin-top-30{
+	margin-top:30px;
+}
+.margin-top-40{
+	margin-top:40px;
+}
+.margin-top-50{
+	margin-top:50px;
+}
+.margin-top-60{
+	margin-top:60px;
+}
+
+.margin-top-70{
+	margin-top:70px;
+}
+
+
+
+.page-header {
+  padding: 30px 0;
+  background: rgb(255, 153, 0,0.7);
+  margin: 0;
+  text-align: center;
+}
+.page-header .entry-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #fff;
+  font-weight: 700;
+}
+.breadcrumb {
+  font-size: 14px;
+  color: #999;
+  background: #fff;
+  margin: 3px 0 6px;
+  width: 300px;
+  border-radius: 0px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.breadcrumb a {
+  color: #444;
+}
+.breadcrumb .crumbs-spacer {
+  color: #ccc;
+  margin: 0 4px;
+}
+
+@media (max-width: 1199px) {
+	#fh5co-logo{
+		margin-right:0px;
+	}
+}
+
+
+/*Banners Sticky*/
+
+ .sticky {
+  position:fixed!important;
+  top: 180px!important;
+}

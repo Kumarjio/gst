@@ -22,17 +22,18 @@
                     <th><?=show_static_text($adminLangSession['lang_id'],244);?></th>								
                     <th><?=show_static_text($adminLangSession['lang_id'],255);?></th>
                     <th><?=show_static_text($adminLangSession['lang_id'],55);?></th>
-                    <th width="250"><?=show_static_text($adminLangSession['lang_id'],258);?></th>
+                    <th width="250" id="action"><?=show_static_text($adminLangSession['lang_id'],258);?></th>
                 </tr>
                 </thead>
                 <tbody>
 
 <?php
 if(count($all_data)){
+$i=1;
 	foreach($all_data as $set_data){
 ?>
                         <tr>
-							<td><?php echo $set_data->id; ?></td>
+							<td><?php echo $i; ?></td>
 							<td><?php echo $set_data->subject; ?></td>
 							<td><?php echo substr($set_data->desc, 0 ,100); ?></td>
 							<td>
@@ -40,17 +41,17 @@ if(count($all_data)){
 <a class="btn btn-icon-only btn-primary " href="<?=$_cancel.'/duplicate/'.$set_data->id;?>" data-toggle="tooltip" data-placement="top" title="Duplicate" ><i class="fa fa-files-o"></i></a>
 
 <a class="btn btn-icon-only btn-success " href="<?=$_edit?>/<?=$set_data->id;?>" data-toggle="tooltip" data-placement="top" title="Edit" ><i class="fa fa-edit"></i></a>
+<a class="btn btn-icon-only btn-warning" href="<?=$_cancel.'/send_mail/'.$set_data->id;?>" data-toggle="tooltip" data-placement="top"  title="Send Subscriber" ><i class="fa fa-fw fa-user"></i></a>
+<a class="btn btn-icon-only btn-primary " href="<?=$_cancel.'/sendmailtolist/'.$set_data->id;?>" data-toggle="tooltip" data-placement="top"  title="Send Mail" ><i class="fa fa-share"></i></a>
 
-<a class="btn btn-icon-only btn-primary " href="<?=$_cancel.'/send_mail/'.$set_data->id;?>" data-toggle="tooltip" data-placement="top"  title="Send Mail" ><i class="fa fa-share"></i></a>
-
-<a class="btn btn-icon-only btn-info" href="<?=$_cancel.'/test_email/'.$set_data->id;?>" data-toggle="tooltip" data-placement="top"  title="Test This email"  ><i class="fa fa-chain-broken"></i></a>
+<a class="btn btn-icon-only btn-warning" href="<?=$_cancel.'/test_email/'.$set_data->id;?>" data-toggle="tooltip" data-placement="top"  title="Test This email"  ><i class="fa fa-chain-broken"></i></a>
 
 <a class="btn btn-icon-only btn-danger" href="<?=$_delete?>/<?=$set_data->id;?>" data-toggle="tooltip" data-placement="top"  title="Delete"  onclick="return confirm_box();" ><i class="fa fa-trash-o"></i></a>
 
                             </td>							
                         </tr>
 
-<?php             
+<?php    $i++;         
    }
 }
 ?>                        

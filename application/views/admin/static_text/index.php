@@ -7,6 +7,13 @@
             </div>
 			<div class="panel-body">
 <div class="row" style="margin-bottom:10px;">
+<div class="col-md-6 pull-left">
+<div class="btn-group">	        
+            <a href="admin/static_text/edit_admin" class="btn btn-primary m-r-5 m-b-5">
+            Add New <i class="fa fa-plus"></i>
+            </a>
+        </div>
+</div>
 <div class="col-md-6 pull-right">
 <input type="text" class="form-control search_static_text" autocomplete="off" name="search" placeholder="Search Title" >
 
@@ -39,7 +46,7 @@ $get_lang_value = $this->static_text_model->get_lang($set_data->id, FALSE, $cont
 ?>
 <tr class="s-item" data-name="<?php echo $set_data->name; ?>">
 <td><?php echo $set_data->id; ?></td>
-<td><?php echo $set_data->name; ?></td>
+<td><a href="admin/static_text/edit_admin/<?php echo $set_data->id; ?>"><?php echo $set_data->name; ?></a></td>
 <?php $i=0;
 foreach($this->static_text_model->languages as $key_lang=>$val_lang){
 $i++;

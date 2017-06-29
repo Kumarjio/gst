@@ -12,12 +12,14 @@ $time_data = $this->custom_model->get_time_hour_min();
         <div class="col-xxs-12 col-md-2 mt text-field-box">
             <div class="input-field">
                 <label for="from"><?=show_static_text($lang_id,94);?>:</label>
+				 <span class="input-group-addon" id="basic-addon1"><i class="fa fa-map-marker"></i></span>
                 <input type="text" class="form-control f-place" name="from_place" id="from-place" placeholder="<?=show_static_text($lang_id,44);?>" autocomplete="off" required/>
             </div>
         </div>
         <div class="col-xxs-12 col-md-2 text-field-box mt">
             <div class="input-field">
                 <label for="from"><?=show_static_text($lang_id,95);?>:</label>
+				<span class="input-group-addon" id="basic-addon1"><i class="fa fa-map-marker"></i></span>
                 <input type="text" class="form-control t-place" name="to_place" id="to-place" placeholder="<?=show_static_text($lang_id,44);?>" autocomplete="off" required/>
             </div>
         </div>
@@ -25,11 +27,13 @@ $time_data = $this->custom_model->get_time_hour_min();
          <div class="col-xxs-12 col-md-2 date-field-box mt alternate">
             <div class="input-field">
                 <label for="i-h-s-date2"><?=show_static_text($lang_id,108);?>:</label>
+				 <span class="input-group-addon" id="basic-addon1"><i class="fa fa-calendar"></i></span>
             <input class="form-control" type="text" id="i-h-s-date2" name="d_date" value="<?=date('d-m-Y')?>" data-date-format="dd-mm-yyyy"  data-date-start-date="+0d"  required  />
             </div>
         </div>
         <div class="col-xxs-12 col-md-2 date-field-box mt alternate return-date-box">
             <div class="input-field">
+			 <span class="input-group-addon" id="basic-addon1"><i class="fa fa-calendar"></i></span>
                 <label for="i-h-e-date2"><?=show_static_text($lang_id,339);?>:</label>
             <input class="form-control" type="text" id="i-h-e-date2" name="r_date" value="<?=date('d-m-Y')?>" data-date-format="dd-mm-yyyy"  data-date-start-date="+0d"  required  />
 <!--													<input type="text" class="form-control" id="date-end" placeholder="mm/dd/yyyy"/>-->
@@ -98,7 +102,8 @@ $time_data = $this->custom_model->get_time_hour_min();
                     </div>
 		        </div>
         <div class="col-md-2 col-xxs-12 pull-right">
-            <input type="submit" class="flight-btn btn btn-primary btn-block" value="<?=show_static_text($lang_id,3);?>">
+			<button type="submit" class="btn btn-sys btn-sm pull-right" value="<?=show_static_text($lang_id,3);?>"><i class="fa fa-search"></i> Search</button>
+            <!--<input type="submit" class="flight-btn btn btn-primary btn-block" >-->
         </div>
     </div>
     
@@ -133,23 +138,26 @@ $time_data = $this->custom_model->get_time_hour_min();
  </div>
 
  <div role="tabpanel" class="tab-pane" id="hotels" ng-controller="MainCtrl">
-    <form action="<?='hotels'?>" method="get">
+    <form action="<?='hotels'?>" method="get" id="advance-search-form2">
     <div class="row">
         <div class="col-xxs-12 col-md-4 mt ">
             <div class="input-field">
                 <label for="from"><?=show_static_text($lang_id,84);?>:</label>
+				 <span class="input-group-addon" id="basic-addon1"><i class="fa fa-map-marker"></i></span>
                 <input type="text" class="form-control" name="city" id="from-place" placeholder="Los Angeles, USA" g-places-autocomplete ng-model="place" autocomplete="off"   required/>
             </div>
         </div>
         <div class="col-xxs-12 col-md-2  mt alternate">
             <div class="input-field">
                 <label for="date-start"><?=show_static_text($lang_id,304);?>:</label>
+				 <span class="input-group-addon" id="basic-addon1"><i class="fa fa-calendar"></i></span>
              <input class="form-control" type="text" id="i-h-s-date" name="in_date" value="<?=date('d-m-Y')?>" data-date-format="dd-mm-yyyy"  data-date-start-date="+0d"  required  />
             </div>
         </div>
         <div class="col-xxs-12 col-md-2 mt alternate">
             <div class="input-field">
                 <label for="date-end"><?=show_static_text($lang_id,305);?>:</label>
+				 <span class="input-group-addon" id="basic-addon1"><i class="fa fa-calendar"></i></span>
              <input class="form-control" type="text" id="i-h-e-date" name="out_date" value="<?=date('d-m-Y')?>" data-date-format="dd-mm-yyyy"  data-date-start-date="+0d"  required  />
             </div>
         </div>
@@ -157,6 +165,7 @@ $time_data = $this->custom_model->get_time_hour_min();
         <div class="col-xxs-12 col-md-1 mt">
             <section>
                 <label for="class"><?=show_static_text($lang_id,130);?>:</label>
+				 <span class="input-group-addon" id="basic-addon1"></span>
                 <select class="cs-select cs-selects cs-skin-border adult-select" name="adult">
                     <option value="" disabled selected>1</option>
                     <option value="1">1</option>
@@ -169,6 +178,7 @@ $time_data = $this->custom_model->get_time_hour_min();
         <div class="col-xxs-12 col-md-1 mt">
             <section>
                 <label for="class"><?=show_static_text($lang_id,138);?>:</label>
+				<span class="input-group-addon" id="basic-addon1"></span>
                 <select class="cs-select cs-selects cs-skin-border adult-select" name="children">
                     <option value="" disabled selected>0</option>
                     <option value="0" >0</option>
@@ -180,7 +190,9 @@ $time_data = $this->custom_model->get_time_hour_min();
             </section>
         </div>
         <div class="col-md-2 col-xxs-12 pull-right">
-            <input type="submit" class="flight-btn btn btn-primary btn-block" value="<?=show_static_text($lang_id,3);?>">
+			<button type="submit" class="btn btn-sys btn-sm pull-right" value="<?=show_static_text($lang_id,3);?>"><i class="fa fa-search"></i> Search</button>
+           
+            <!--<input type="submit" class="flight-btn btn btn-primary btn-block" value="">-->
         </div>
     </div>
     </form>
@@ -194,12 +206,14 @@ $time_data = $this->custom_model->get_time_hour_min();
         <div class="col-xxs-12 col-md-2 mt">
             <div class="input-field">
                 <label for="from"><?=show_static_text($lang_id,9400);?>Pick-Up Location:</label>
+				 <span class="input-group-addon" id="basic-addon1"><i class="fa fa-map-marker"></i></span>
                 <input type="text" class="form-control f-place" name="from_place" id="from-place" placeholder="Los Angeles, USA" required/>
             </div>
         </div>
         <div class="col-xxs-12 col-md-2 mt car-return-text-box " >
             <div class="input-field">
                 <label for="from"><?=show_static_text($lang_id,9500);?>Drop-Off Location:</label>
+				 <span class="input-group-addon" id="basic-addon1"><i class="fa fa-map-marker"></i></span>
                 <input type="text" class="form-control t-place" name="to_place" id="to-place" placeholder="Tokyo, Japan" required/>
             </div>
         </div>
@@ -207,21 +221,23 @@ $time_data = $this->custom_model->get_time_hour_min();
          <div class="col-xxs-12 col-md-2 mt alternate">
             <div class="input-field">
                 <label for="i-h-s-date2"><?=show_static_text($lang_id,1080);?>Pick-Up Date:</label>
+				<span class="input-group-addon" id="basic-addon1"><i class="fa fa-calendar"></i></span>
             <input class="form-control" type="text" id="i-h-s-date3" name="d_date" value="<?=date('d-m-Y')?>" data-date-format="dd-mm-yyyy"  data-date-start-date="+0d"  required  />
             </div>
         </div>
          <div class="col-xxs-12 col-md-1 mt alternate">
             <div class="input-field">
                 <label for="i-h-s-date2"><?=show_static_text($lang_id,1008);?>Time:</label>
-<select class="selectpicker show-tick select-time" name="d_time">
-<?php
-foreach($time_data as $key=>$vl){
-?>
-<option value="<?=$key?>"><?=$vl?></option>
-<?php
-}
-?>
-</select>            
+				<span class="input-group-addon" id="basic-addon1"><i class="fa fa-clock-o"></i></span>
+					<select class="selectpicker show-tick select-time" name="d_time">
+						<?php
+						foreach($time_data as $key=>$vl){
+						?>
+						<option value="<?=$key?>"><?=$vl?></option>
+						<?php
+						}
+						?>
+					</select>            
             </div>
         </div>
         
@@ -230,6 +246,7 @@ foreach($time_data as $key=>$vl){
         <div class="col-xxs-12 col-md-2 mt alternate return-date-box">
             <div class="input-field">
                 <label for="i-h-e-date2"><?=show_static_text($lang_id,3390);?>Drop-Off Date:</label>
+				<span class="input-group-addon" id="basic-addon1"><i class="fa fa-calendar"></i></span>
             <input class="form-control" type="text" id="i-h-e-date3" name="r_date" value="<?=date('d-m-Y')?>" data-date-format="dd-mm-yyyy"  data-date-start-date="+0d"  required  />
 <!--													<input type="text" class="form-control" id="date-end" placeholder="mm/dd/yyyy"/>-->
             </div>
@@ -238,6 +255,7 @@ foreach($time_data as $key=>$vl){
         <div class="col-xxs-12 col-md-1 mt alternate">
             <div class="input-field">
                 <label for="i-h-s-date2"><?=show_static_text($lang_id,1008);?>Time:</label>
+				<span class="input-group-addon" id="basic-addon1"><i class="fa fa-clock-o"></i></span>
 <select class="selectpicker show-tick select-time" name="r_time">
 <?php
 foreach($time_data as $key=>$vl){
@@ -251,7 +269,9 @@ foreach($time_data as $key=>$vl){
         </div>
 
         <div class="col-md-2 col-xxs-12 pull-right">
-            <input type="submit" class="flight-btn btn btn-primary btn-block" value="<?=show_static_text($lang_id,3);?>">
+			<button type="submit" class="btn btn-sys btn-sm pull-right" value="<?=show_static_text($lang_id,3);?>"><i class="fa fa-search"></i> Search</button>
+            
+            <!--<input type="submit" class="flight-btn btn btn-primary btn-block">-->
         </div>
     </div>
     
@@ -274,30 +294,33 @@ $city_data = $this->comman_model->get_query("SELECT MIN(id) AS id, cityName AS c
         <div class="col-xxs-12 col-md-3 mt">
             <div class="input-field">
                 <label for="from"><?=show_static_text($lang_id,8004);?>Depart Form:</label>
+				 <span class="input-group-addon" id="basic-addon1"><i class="fa fa-map-marker"></i></span>
                 <select name="form_place" class="selectpicker show-tick"> 
-<option value="">Select</option>
-<?php
-if($city_data){
-	foreach($city_data as $set_city){
-?>
-	<option value="<?=$set_city->id?>" ><?=$set_city->city_name?></option>
-<?php		
-	}
-}
-?>
+							<option value="">Select</option>
+							<?php
+							if($city_data){
+								foreach($city_data as $set_city){
+							?>
+								<option value="<?=$set_city->id?>" ><?=$set_city->city_name?></option>
+							<?php		
+								}
+							}
+							?>
 
-                    </select>
+                </select>
             </div>
         </div>
         <div class="col-xxs-12 col-md-2 mt ">
             <div class="input-field">
                 <label for="from"><?=show_static_text($lang_id,8004);?>Holiday Destination:</label>
+				 <span class="input-group-addon" id="basic-addon1"><i class="fa fa-map-marker"></i></span>
                 <input type="text" class="form-control" name="city" id="from-place" placeholder="Los Angeles, USA" required/>
             </div>
         </div>
         <div class="col-xxs-12 col-md-2  mt alternate">
             <div class="input-field">
                 <label for="date-start"><?=show_static_text($lang_id,3004);?>Depart:</label>
+				<span class="input-group-addon" id="basic-addon1"><i class="fa fa-calendar"></i></span>
              <input class="form-control datetimepicker1" type="text" name="in_date" value="<?=date('d-m-Y')?>" data-date-format="dd-mm-yyyy"  data-date-start-date="+0d"  required  />
             </div>
         </div>
@@ -305,6 +328,7 @@ if($city_data){
         <div class="col-xxs-12 col-md-1 mt">
             <section>
                 <label for="class"><?=show_static_text($lang_id,1300);?>Nights:</label>
+					<span class="input-group-addon" id="basic-addon1"><i class="fa fa-lightbulb-o"></i></span>
                 <select class="cs-select cs-selects cs-skin-border adult-select" name="adult">
                     <option value="" disabled selected>1</option>
                     <option value="1">1</option>
@@ -346,7 +370,9 @@ if($city_data){
             </section>
         </div>
         <div class="col-md-2 col-xxs-12 pull-right">
-            <input type="submit" class="flight-btn btn btn-primary btn-block" value="<?=show_static_text($lang_id,3);?>">
+			<button type="submit" class="btn btn-sys btn-sm pull-right" value="<?=show_static_text($lang_id,3);?>"><i class="fa fa-search"></i> Search</button>
+            
+            <!--<input type="submit" class="flight-btn btn btn-primary btn-block">-->
         </div>
     </div>
 
@@ -370,99 +396,100 @@ if($home_slider_s){
         </div>
     </div>-->
 
-<?php
-if(isset($form_data)&&!empty($form_data)){
-	foreach($form_data as $set_form){
-?>
-<div class="col-xxs-12 col-md-3 mt">
-            <div class="input-field">
-                <label for="from"><?=$set_form->name;?>:</label>
-<?php
-if($set_form->type=='textfield'){
-?>
-<input type="text" placeholder="" name="field[<?=$set_form->id?>]" class="form-control" value="" />
-<?php	
-}
-if($set_form->type=='mdroplist'){
-	$arrayList = explode(',',$set_form->values);
-	if($arrayList){
-?>
-<select class="input-field" name="field[<?=$set_form->id?>][mult][]" multiple="multiple" style="width:100%">
-<?php
-foreach($arrayList as $setArry){
-?>
-<option value="<?=$setArry; ?>" ><?=$setArry?></option>
-<?php
-}//foreach
-?>
-</select>
-<?php
-	}//arrayList
-}//type
-if($set_form->type=='droplist'){
-	$arrayList = explode(',',$set_form->values);
-	if($arrayList){
-?>
-<select class="form-control " name="field[<?=$set_form->id?>]" >
-        <option value="">Select</option>
-<?php
-	foreach($arrayList as $setArry){
-?>
-    <option value="<?=$setArry; ?>" ><?=$setArry?></option>
-<?php
-	}
-?>
-</select>
-<?php
-	}
-}
-if($set_form->type=='date_time'){
-?>
-<input type="text" name="field[<?=$set_form->id?>]" class="form-control datetimepicker1" id="" value="" />
+					<?php
+					if(isset($form_data)&&!empty($form_data)){
+						foreach($form_data as $set_form){
+					?>
+					<div class="col-xxs-12 col-md-3 mt">
+						<div class="input-field">
+						<label for="from"><?=$set_form->name;?>:</label>
+					<?php
+					if($set_form->type=='textfield'){
+					?>
+					
+					<input type="text" placeholder="" name="field[<?=$set_form->id?>]" class="form-control" value="" />
+					<?php	
+					}
+					if($set_form->type=='mdroplist'){
+						$arrayList = explode(',',$set_form->values);
+						if($arrayList){
+					?>
+				
+					<select class="input-field" name="field[<?=$set_form->id?>][mult][]" multiple="multiple" style="width:100%">
+					<?php
+					foreach($arrayList as $setArry){
+					?>
+					
+					<option value="<?=$setArry; ?>" ><?=$setArry?></option>
+					<?php
+					}//foreach
+					?>
+					</select>
+					<?php
+						}//arrayList
+					}//type
+					if($set_form->type=='droplist'){
+						$arrayList = explode(',',$set_form->values);
+						if($arrayList){
+					?>
+					
+					<select class="form-control " name="field[<?=$set_form->id?>]" >
+					
+							<option value="">Select</option>
+					<?php
+						foreach($arrayList as $setArry){
+					?>
+						<option value="<?=$setArry; ?>" ><?=$setArry?></option>
+					<?php
+						}
+					?>
+					</select>
+					<?php
+						}
+					}
+					if($set_form->type=='date_time'){
+					?>
+					<span class="input-group-addon" id="basic-addon1"><i class="fa fa-calendar"></i></span>
+					<input type="text" name="field[<?=$set_form->id?>]" class="form-control datetimepicker1" id="" value="" />
 
 
-<!--<input type="text" placeholder="yyyy-mm-dd" name="field[<?=$set_form->id?>]" data-date-format="yyyy-mm-dd" class="form-control datetimepicker1 " />-->
-<?php
-}
+					<!--<input type="text" placeholder="yyyy-mm-dd" name="field[<?=$set_form->id?>]" data-date-format="yyyy-mm-dd" class="form-control datetimepicker1 " />-->
+					<?php
+					}
 
-if($set_form->type=='date'){
-?>
-<input type="text" placeholder="dd-mm-yyyy" name="field[<?=$set_form->id?>]" data-date-format="dd-mm-yyyy" value="" readonly=""class="form-control datetimepicker1 " />
-<?php
-}
-if($set_form->type=='yes_no'){
-?>
-<div class="radio-list">
+					if($set_form->type=='date'){
+					?>
+					<span class="input-group-addon" id="basic-addon1"><i class="fa fa-calendar"></i></span>
+					<input type="text" placeholder="dd-mm-yyyy" name="field[<?=$set_form->id?>]" data-date-format="dd-mm-yyyy" value="" readonly=""class="form-control datetimepicker1 " />
+					<?php
+					}
+					if($set_form->type=='yes_no'){
+					?>
+						<div class="radio-list">
 
-<label class="radio-inline">
-	<input type="radio" name="field[<?=$set_form->id?>]" class="" value="Yes" /> Yes
-</label>
+						<label class="radio-inline">
+							<input type="radio" name="field[<?=$set_form->id?>]" class="" value="Yes" /> Yes
+						</label>
 
-<label class="radio-inline">
-	<input type="radio" name="field[<?=$set_form->id?>]" class="" value="No"  /> No
-</label>
-</div>
+						<label class="radio-inline">
+							<input type="radio" name="field[<?=$set_form->id?>]" class="" value="No"  /> No
+						</label>
+						</div>
 
-<?php
-}
-?>    
-
-
-
-
-
-
-
+						<?php
+						}
+						?>    
             </div>
         </div>
 
-<?php
-	}	
-}
-?>        
+					<?php
+						}	
+					}
+					?>   		     
         
         <div class="col-md-2 col-xxs-12 pull-right">
-            <input type="submit" class="flight-btn btn btn-primary btn-block" value="<?=show_static_text($lang_id,3);?>">
+			<button type="submit" class="btn btn-sys btn-sm pull-right" value="<?=show_static_text($lang_id,3);?>"><i class="fa fa-search"></i> Search</button>
+            
         </div>
     </div>
     </form>
@@ -476,6 +503,9 @@ if($set_form->type=='yes_no'){
 </div>
 
 <style>
+.home-slider-wrapper .adult-select span {
+    padding: 6px 10px !important;
+}
 #carhire .row{
 	margin:0;
 }
@@ -495,7 +525,7 @@ if($set_form->type=='yes_no'){
 	border:none !important;
 }
 .bootstrap-select .dropdown-toggle{
-	padding:11px 11px;
+	padding:7px 15px;
 	border-radius: 0;
 	border: none;
 	font-size:14px;

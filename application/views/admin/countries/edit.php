@@ -10,12 +10,17 @@
                 <?=form_open(NULL, array('class' => 'form-horizontal', 'role'=>'form','enctype'=>"multipart/form-data"))?>                                                             
                         <div class="form-body">	                        	
 						<div class="form-group">
-                                  <label class="col-lg-2 control-label"><?=show_static_text($adminLangSession['lang_id'],2036);?>Name</label>
+                                  <label class="col-lg-2 control-label"><?=show_static_text($adminLangSession['lang_id'],2036);?>City</label>
                                   <div class="col-lg-10">
                                     <?=form_input('name', set_value('name', $products->{'name'}), 'class="form-control copy_to_next" id="inputTitle'.'" placeholder=""')?>
                                   </div>
                                 </div>
-                                
+            <div class="form-group">
+                                  <label class="col-lg-2 control-label">Country</label>
+                                  <div class="col-lg-10">
+                                    <?=form_input('desc', set_value('desc', $products->{'desc'}), 'class="form-control copy_to_next" id="inputTitle'.'" placeholder=""')?>
+                                  </div>
+                                </div>                    
 						<div class="form-group">
                                   <label class="col-lg-2 control-label"><?=show_static_text($adminLangSession['lang_id'],2036);?>Link</label>
                                   <div class="col-lg-10">

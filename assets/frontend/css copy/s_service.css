@@ -1,0 +1,271 @@
+.search-content {
+  width: 1000px;
+}
+
+
+/* =======================================================
+*
+* side-content
+*
+* ======================================================= */
+
+.search-content .col-md-3,
+.search-content .col-md-9{
+	padding-left:5px;
+	padding-right:5px;
+}
+.row.row-centered.pcen {
+    padding-left: 13%;
+    padding-right: 13%;
+}
+#advance-search-form label {
+    font-weight: 400;
+}
+.search-form-wp select, .search-form-wp input[type="text"]
+{
+	font-weight: 500;
+	    height: 35px;
+		    height: 35px;
+    padding: 0 17px;
+}
+.col-md-6.col-xs-12.mt
+{
+	width:25%;
+}
+/* =======================================================
+*
+* flight-item
+*
+* ======================================================= */
+.flight-item{
+	margin-bottom: 5px;
+	padding:10px;
+}
+.flight-item .item-media .image-cover{
+	padding:0;
+}
+.flight-item .item-media .image-cover img {
+	height:150px;
+}
+.flight-item .item-price-more .price .amount{
+    color: #f78536 ;
+}
+
+.leftBanner, .rightBanner {
+    position: absolute !important;
+    top: 185px !important;
+}
+
+
+
+
+
+
+
+@media (max-width: 1199px)
+{
+	.row.row-centered.pcen
+	{
+		margin-top: 52px;
+	}
+}
+
+@media (max-width: 991px)
+{
+.btn.btn-blck-sys.btn-block {
+    margin-top: 56px;
+    width: 20%;
+	    margin-left: 14px;
+		float: right;
+}
+.col-md-6.col-xs-12.mt {
+    width: 100%;
+}
+}
+
+@media (max-width: 768px) {
+	.flight-item .item-media,
+	.flight-item .item-body,
+	.flight-item .item-price-more{
+		float:none;
+		width:100%;
+	}
+	
+	.flight-item .item-price-more{
+		text-align:center;
+	}
+	.flight-item .item-price-more .btn{
+		width: 100%;
+	}
+	
+	.flight-item .item-price-more:after{
+		border-left: none;
+	}
+	
+	.flight-item .item-media .image-cover{
+		text-align:center;
+	
+	}
+	.flight-item .item-media .image-cover img {
+		width: 50%;
+		height: 105px;
+	}
+		.search-form-wp label {
+		width: 59%;
+	}
+	.btn.btn-blck-sys.btn-block {
+    margin-top: 20px;
+    width: 45%;
+	}
+	.row.row-centered.pcen {
+    margin-top: 20px;
+}
+
+
+
+
+
+/* =======================================================
+*
+* side-content
+*
+* ======================================================= */
+
+
+
+.side-content .slider.slider-horizontal .slider-track {
+  height: 4px;
+  margin-top: -4px;
+}
+
+.side-content .slider-track{
+	background-image: linear-gradient(to bottom, #675B72 0px, #675B72 100%);
+/*	background-color: #675B72 !important;*/
+}
+.side-content .slider-handle{
+	height:15px;
+	width:15px;
+	background-color: #FFF;
+	background-image: linear-gradient(to bottom, #FFF 0px, #FFF 100%);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.side-content .slider-selection{
+	background:#f78536 ;
+}
+
+.side-content .side-c{
+	border-bottom: 1px solid #59497D;
+	padding-bottom:10px;
+}
+.side-content .star-radio,
+.side-content .stop-radio{
+	width:100%;
+}
+
+.side-content .star-radio .fa{
+	margin-right:5px;
+	font-size:14px;
+}
+
+.side-content .stop-radio label{
+	font-size:12px;
+	color:#CCC;
+}
+
+.side-content .side-c .l-title {
+	color:#FFF;
+	font-size:14px;
+	font-weight:normal;
+}
+
+.side-content .case-header .items {
+  font-size: 11px;
+  font-weight:normal;
+}
+
+
+
+.leftBanner, .rightBanner {
+  position: absolute !important;
+  top: 1px !important;
+}
+.search-wrapper .filter-page__content{
+	min-height:390px;
+}
+
+
+.search-form-wp select,
+.search-form-wp input[type="text"] {
+  background: #FFF;
+  border: none;
+  box-shadow: none;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 5px 10px !important;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  color: #000 !important;
+  height:32px;
+}
+
+
+@media (max-width: 768px) {
+	.search-form-wp  form .btn{
+		padding:4px;
+		display:block;
+		width:100%;
+		margin-right:0 !important;
+	}
+
+	.search-form-wp {
+		padding-top:10px;
+	}
+	.search-form-wp label{
+		width:40%;
+		font-size:13px;
+	}
+	.search-form-wp select, .search-form-wp  input[type="text"] {
+		  float: right;
+		  width: 100%;
+	}
+	.search-form-wp  .adult-select{
+	  float: right;
+	  width: 55%;
+	}
+
+	.search-wrapper .search-contents{
+		padding-top:10px;
+	}
+	
+	
+	.search-form-wp  form .btn{
+		padding:4px;
+		display:block;
+		width:100%;
+		margin-right:0 !important;
+	}
+	
+.btn.btn-blck-sys.btn-block {
+    margin-top: 20px;
+    width: 60%;
+
+}
+}
+
+@media (max-width: 475px)
+{
+.search-form-wp label
+	{
+    width: 100%;
+	}
+	.btn.btn-blck-sys.btn-block {
+     width: 122%;
+}
+
+
+
+
+
