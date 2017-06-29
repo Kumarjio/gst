@@ -1,3 +1,4 @@
+
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class comman_model extends CI_Model {
@@ -10,6 +11,152 @@ class comman_model extends CI_Model {
         // Call the Model constructor
         parent::__construct();
     }
+	/*10-june-2017*/
+	    public function get_media($table,$single = FALSE){
+		$this->_table_name = $table;
+      	if($single == TRUE) {
+            $method = 'row';
+        }
+        else {
+            $method = 'result';
+        }
+    
+	   $this->db->from($this->_table_name);
+$this->db->order_by("id", "DESC");
+$query = $this->db->get(); 
+return $query->result();
+       
+    }
+public function add_list($data)
+{
+//print_r($data); 
+$current_time=date('m/d/Y h:i:s a', time());
+$created=strtotime($current_time);
+$email = $data['emails'];
+$str=implode(',',$email);
+//echo $str; die;
+//print_r($email); die; 
+//foreach( $email as $key=>$val)
+//{
+	//echo $val;
+$insert = array('list_title'=>$data['title'],'email'=>$str,'status'=>'1','created'=>$created);
+//print_r($insert);
+$result=$this->db->insert('mail_list', $insert);
+
+//}
+if($result)
+			{
+				echo "<script>alert('Mailing List added successfully');</script>";
+			}
+}
+public function edit_list($data)
+{
+//print_r($data); die;
+$current_time=date('m/d/Y h:i:s a', time());
+$created=strtotime($current_time);
+$email = $data['emails'];
+$str=implode(',',$email);
+
+$update = array('list_title'=>$data['title'],'email'=>$str,'status'=>'1','created'=>$created);
+//print_r($update); echo 'EDit_id'.$data['id']; die;
+ $this->db->where('Id', $data['id']);
+$result=$this->db->update('mail_list', $update);
+
+if($result)
+			{
+				echo "<script>alert('Mailing List Updated successfully');redirect('/admin/subscriber/view_list');</script>";
+			}
+}
+public function get_list()
+{
+      $this->db->from(mail_list);
+$this->db->order_by("Id", "DESC");
+$query = $this->db->get(); 
+return $query->result();
+	  /*$this->db->select("mail_list.Id, mail_list.list_title, mail_list.created, newsletters.email");
+        $this->db->from("mail_list");
+        $this->db->join('newsletters', 'mail_list.email = newsletters.id');
+    $query = $this->db->get();
+       // return $query->result();
+$select = array();
+        foreach ($query->result() as $row) {
+            $select[] = $row;
+        }
+        if (count($select) > 0)
+            return $select;
+        return NULL;		
+
+
+    //return $ret;*/
+	
+	 
+}
+public function get_list_byid($id)
+{
+      $this->db->from(mail_list);
+$this->db->where('Id', $id);
+$query = $this->db->get(); 
+return $query->result();	 
+}
+public function get_subscribers($id)
+{ 
+
+			//echo $stat_id;
+			 $this->db->select('email');
+    $this->db->from('mail_list');
+			 //$this->db->from(mail_list);
+		$this->db->where('Id', $id);
+		$query = $this->db->get(); 
+		return $query->result();	
+
+}
+public function getsubscriberemail($id)
+{ 
+
+			$em_id=explode(',',$id);
+			$this->db->select('email');
+    $this->db->from('newsletters');
+		$this->db->where_in('Id', $em_id);
+		$query = $this->db->get(); 
+		return $query->result_array();	
+
+}
+public function delete_subscriber_fromlist($where)
+{ //echo $where; die;
+	//$this->db->delete(mail_list,$where);
+	$query = $this->db->get_where('mail_list',array('Id' => $where));
+
+    if ($query->num_rows() == 1) {
+
+    if ($this->db->delete('mail_list',array('Id' => $where))) 
+
+        {return true;}
+
+        else
+
+        {return false;}
+    } else {return false;}
+
+}
+public function delete_subscriber($email)
+{ //echo $email; die;
+	//$this->db->delete(mail_list,$where);
+	$query = $this->db->get_where('newsletters',array('email' => $email));
+
+    if ($query->num_rows() == 1) {
+
+    if ($this->db->delete('newsletters',array('email' => $email))) 
+
+        {return true;
+			echo "<script>alert('Subscriber unsubscribed successfully');</script>";
+			}
+
+        else
+
+        {return false;}
+    } else {return false;}
+
+}
 
    public function get_time(){	 
 		$options = array();
