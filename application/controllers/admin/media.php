@@ -18,11 +18,13 @@ class media extends Admin_Controller{
 	}
 
 	function index(){
+		//echo "hello world"; die;
         $this->data['name'] = show_static_text($this->data['adminLangSession']['lang_id'],17800).'Media';
         $this->data['title'] = $this->data['name'].' | '.$this->data['settings']['site_name'];
 		$this->data['table'] = true;
-
-		$this->data['all_data'] = $this->comman_model->get($this->_table_names,false);
+		$this->data['all_data'] = $this->comman_model->get_media($this->_table_names,false);
+		//$all=$this->data['all_data'] = $this->comman_model->get($this->_table_names,false);
+		//echo "<pre>";print_r($all);die;
         $this->data['subview'] = $this->_subView.'index';	
 		$this->load->view('admin/_layout_main',$this->data);
 	}
@@ -108,6 +110,12 @@ class media extends Admin_Controller{
         $this->load->view('admin/_layout_main', $this->data);	
 	}
 	
+		public function upload_media(){
+					echo "hello world"; 
+     
+	}
+	
+
 	public function download($id = NULL){
 		$this->load->helper('download');
 		if(!$id){

@@ -147,51 +147,51 @@ echo '<html xmlns:x="urn:schemas-microsoft-com:office:excel">
 	}
     
 public function add(){
-	    // Fetch a page or set a new one
-	    if($id)
-        {
-			$this->data['name'] = show_static_text($this->data['adminLangSession']['lang_id'],254);
-			$this->data['title'] = $this->data['name'].' | '.$this->data['settings']['site_name'];
-
-            $this->data['news'] = $this->comman_model->get_by($this->_table_names,array('id'=>$id), FALSE, FALSE, true);
-            count($this->data['news']) || $this->data['errors'][] = 'User could not be found';            
-        }
-        else
-        {
-			$this->data['name'] = show_static_text($this->data['adminLangSession']['lang_id'],257);
-			$this->data['title'] = $this->data['name'].' | '.$this->data['settings']['site_name'];
-			$newUser = new stdClass();
-			$newUser->email = '';
-
-            $this->data['news'] = $newUser;
-        }
-        
-
-        // Fetch all files by repository_id
-        // Set up the form
-		$rules = array(
-                    'email' =>array('field'=>'email','label'=>'Email','rules'=>'trim|required|valid_email'),
-                    ); 
-        $this->form_validation->set_rules($rules);
-
-        // Process the form
-        if($this->form_validation->run() == TRUE){
-            
-            $data =array();
-        	$data = $this->news_model->array_from_post(array('email'));
-            $id = $this->comman_model->save($this->_table_names,$data,$id);
+	  // $create=$this->comman_model->create();
+	  // echo $create; die;
+		if (!empty($_POST))
+		{
+			$result=$this->comman_model->add_list($_POST);
+			//echo $result;
 			
-			if(empty($this->data['news']->id)){
-	            $this->session->set_flashdata('success',show_static_text($this->data['adminLangSession']['lang_id'],295));
-			}
-			else
-	            $this->session->set_flashdata('success',show_static_text($this->data['adminLangSession']['lang_id'],296));
-            
-            redirect($this->data['_cancel'].'/');
-        }
-        
-        // Load the view
-		$this->data['subview'] = $this->_subView.'edit';
+		}
+		$this->data['all_data'] = $this->comman_model->get($this->_table_names,false);
+		$this->data['subview'] = $this->_subView.'add';
+        $this->load->view('admin/_layout_main', $this->data);
+	}
+	public function view_list(){
+	  // echo 777;
+		 $this->data['listing'] = $this->comman_model->get_list();
+		 /*$result = $this->data['listing'] = $this->comman_model->get_list();
+		 foreach($result as $s)
+		 { echo "<pre>"; print_r($s); } die;*/
+		$this->data['all_data'] = $this->comman_model->get($this->_table_names,false);
+		$this->data['subview'] = $this->_subView.'view';
+        $this->load->view('admin/_layout_main', $this->data);
+	}
+	function deletelistsubsciber($id = false){
+		if(!$id){
+			redirect($this->data['_cancel']);		
+		}
+		//echo $id; die;
+		$this->comman_model->delete_subscriber_fromlist($id);
+		$this->session->set_flashdata('success',show_static_text($this->data['adminLangSession']['lang_id'],297)); 
+		//redirect($this->data['_subView']);	
+		redirect('/admin/subscriber/view_list');	
+	}
+	public function edit_list($id = false){
+		//echo $id; die;
+	  if (!empty($_POST))
+		{
+			//print_r($_POST);die;
+			$result=$this->comman_model->edit_list($_POST);
+			//echo $result;
+			
+			
+		}
+		 $this->data['edit_listing'] = $this->comman_model->get_list_byid($id);
+		$this->data['all_data'] = $this->comman_model->get($this->_table_names,false);
+		$this->data['subview'] = $this->_subView.'edit_list';
         $this->load->view('admin/_layout_main', $this->data);
 	}
 }

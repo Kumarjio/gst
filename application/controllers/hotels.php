@@ -193,6 +193,7 @@ die;				*/
 						foreach($results['pro'] as $set_pr){
 							$products[] = $set_pr;
 						}
+						
 					}
 
 /*			echo '<pre>';

@@ -129,8 +129,8 @@ class Service extends Admin_Controller{
         
         // Set up the form
         $rules = $this->service_model->rules;
-        $this->form_validation->set_rules($this->service_model->get_all_rules());
-
+        $get_rules=$this->form_validation->set_rules($this->service_model->get_all_rules());
+//print_r($get_rules);die;
         // Process the form
         if($this->form_validation->run() == TRUE){
             $data =array();
@@ -141,14 +141,14 @@ class Service extends Admin_Controller{
 
 
             $data['date'] = date('Y-m-d H:i:s');
-/*			echo '<pre>';
+			/*echo '<pre>';
 			print_r($data_lang);die;*/
             $id = $this->service_model->save_with_lang($data, $data_lang);
 //            $id = $this->comman_model->save($this->_table_names,$data);
-/*			if(empty($this->data['categories']->id))
+		if(empty($this->data['categories']->id))
 	            $this->session->set_flashdata('success',$this->_msg_success);
 			else
-	            $this->session->set_flashdata('success',$this->_msg_update);*/			
+	            $this->session->set_flashdata('success',$this->_msg_update);			
             redirect($this->data['_cancel'].'/step2/'.$id);
         }
         

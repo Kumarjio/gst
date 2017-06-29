@@ -43,6 +43,87 @@ class Front extends Frontend_Controller {
 		$this->data['title'] = $this->data['settings']['site_name'];
 		$this->load->view($this->_subView.'active',$this->data);
 	}
+	function hotelapi(){
+		//echo 77; die('here');
+		$username = "gosearchtr";
+		$password = "gosearchtrapi";
+		$handle=curl_init('https://distribution-xml.booking.com/json/bookings.getHotels?countrycodes=in');
+		curl_setopt($handle, CURLOPT_USERPWD, $username . ":" . $password);  
+		curl_setopt($handle, CURLOPT_VERBOSE, true);
+		curl_setopt($handle, CURLOPT_RETURNTRANSFER, true);
+		curl_setopt($handle, CURLOPT_SSL_VERIFYPEER, false);
+		$content = curl_exec($handle);
+		$results = json_decode($content, true);
+		echo '<pre>';print_r($results);
+	}
+	function hotelapilist(){
+		$username = "gosearchtr";
+		$password = "gosearchtrapi";
+		$handle=curl_init('https://distribution-xml.booking.com/json/bookings.getHotels?countrycodes=in');
+		curl_setopt($handle, CURLOPT_USERPWD, $username . ":" . $password);  
+		curl_setopt($handle, CURLOPT_VERBOSE, true);
+		curl_setopt($handle, CURLOPT_RETURNTRANSFER, true);
+		curl_setopt($handle, CURLOPT_SSL_VERIFYPEER, false);
+		$content = curl_exec($handle);
+		$results = json_decode($content, true);
+		?>
+		<table>
+				<th>Hotel Name</th>
+				<th>City Name</th>
+				<th>Country Code</th>
+				<th>Min Rate</th>
+				<th>Max Rate</th>
+				<th>Address</th>
+				<th>url</th>
+			
+			<?php
+		foreach($results as $detail){
+			?>
+			<tr>
+			<td><?php echo $detail['name'];?></td>
+			<td><?php echo $detail['city'];?></td>
+			<td><?php echo $detail['countrycode'];?></td>
+			<td><?php echo $detail['minrate'];?></td>
+			<td><?php echo $detail['maxrate'];?></td>
+			<td><?php echo $detail['address'];?></td>
+			<td><?php echo $detail['url'];?></td>
+			</tr>
+			<?php
+			
+		}
+		?>
+		</table>
+		<?php
+	}
+	function apirecord(){
+		$ch = curl_init();
+		// Disable SSL verification
+		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+		// Will return the response, if false it print the response
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+		// Set the url
+		curl_setopt($ch, CURLOPT_URL,"http://partners.api.skyscanner.net/apiservices/reference/v1.0/countries/az-AZ?apiKey=go743168210373036977748833709559");
+		// Execute
+		$result=curl_exec($ch);
+		// Closing
+		curl_close($ch);
+		$results = json_decode($result, true);
+		//echo '<pre>';print_r($results);
+		foreach($results['Countries'] as $detail){
+		?>
+		<table>
+		<tr>
+			<th>Code</th>
+			<th>Country Name</th>
+		</tr>
+		<tr>
+			<td><?php echo $detail['Code']?></td>
+			<td><?php echo $detail['Name']?></td>
+		</tr>
+		</table>
+		<?php
+		}
+	}
 }
 
 /* End of file welcome.php */
