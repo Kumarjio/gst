@@ -37,6 +37,7 @@
 	<script src="assets/frontend/js/bootstrap-datepicker.min.js"></script>
 	<script src="assets/frontend/js/classie.js"></script>
 	<script src="assets/frontend/js/selectFx.js"></script>
+	<script src="assets/frontend/js/cookies.js"></script>
 	<script src="gofly/js/gstmainweb.js"></script>
 	<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
