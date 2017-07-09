@@ -38,7 +38,7 @@
               <li><a href="<?=$settings['twitter_url']?>" target="_blank"><i class="icon-twitter2"></i></a></li>
               <li><a href="<?=$settings['facebook_url']?>" target="_blank"><i class="icon-facebook2"></i></a></li>
               <li><a href="<?=$settings['google_plus']?>" target="_blank"><i class="icon-google-plus"></i></a></li>
-              <li><a href="//blog.gosearchtravel.com" title="GoSearchTravel Blog"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+              <li><a href="//blog.gosearchtravel.com" title="GoSearchTravel Blog" target="_blank"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
             </ul>
           </div>
         </div>
