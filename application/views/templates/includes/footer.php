@@ -47,6 +47,13 @@
   </section>
   <div class="container">
     <div class="copyright-section">
+	    <div class="row">
+        <div class="col-md-12 text-center">
+          <p>
+            <?=show_static_text($lang_id,62);?>
+          </p>
+        </div>
+      </div>
       <div class="row">
         <div class="col-md-12 text-center">
           <p>
@@ -54,13 +61,7 @@
           </p>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <p>
-            <?=show_static_text($lang_id,62);?>
-          </p>
-        </div>
-      </div>
+      
     </div>
   </div>
 </footer>
