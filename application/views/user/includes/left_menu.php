@@ -12,23 +12,16 @@
   width: 100%;
   border-bottom: 1px solid #e7e7e7;
 }
-.side-menu .navbar-nav .active a {
-	background-color: #c6202d;
-	color: #FFF;
-	margin-right: -1px;
-	border-right: 1px solid #e7e7e7;
-}
+
 
 .side-menu .navbar-nav li {
   display: block;
   width: 100%;
   border-bottom: 1px solid #e7e7e7;
 }
-.side-menu .navbar-nav li a {
-  padding: 10px 15px;
-}
+
 .side-menu .navbar-nav li a:hover{
-	background-color:#F78536 !important;
+	background-color:rgb(255,153,0) !important;
 	color:#FFF !important;
 }
 
@@ -112,32 +105,33 @@
   padding: 20px;
 }
 </style>
+
+
+
 <div class="col-md-3">
+<div class="profile-sidebar">
     <!-- uncomment code for absolute positioning tweek see top comment in css -->
     <!-- <div class="absolute-wrapper"> </div> -->
     <!-- Menu -->
+
+    <!--<div class="profile-userpic">
+          <img src="<?=!empty($user_details->image)?'assets/uploads/users/thumbnails/'.$user_details->image:'assets/uploads/sites/gst-logo.png'?>" alt="" / class="user-img">  
+        </div>-->
+
+     
+        
+
     <div class="side-menu">
     
     <nav class="navbar navbar-default user_left_menu" role="navigation">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
     	<div class="side-menu-container">
-        <ul class="nav">
-            <li class="nav-profile">
-<!--                <div class="image">
-                    <a href="javascript:;"><img src="<?=!empty($user_details->image)?'assets/uploads/users/thumbnails/'.$user_details->image:'assets/uploads/profile.jpg'?>" alt="" / class="user-img"></a>
-                </div>-->
-                <div class="info"><strong><?=$user_details->first_name.' '.$user_details->last_name;?></strong>
- 
-                </div>
-            </li>
-        </ul>
             
-    
         <ul class="nav navbar-nav">
 
             
-            <li class=" <?php echo $active=='home'?'class=" active"':'class=""'; ?>" >
+            <li class=" <?php echo $active=='home'?'active':'';?>" >
                 <a href="<?=$lang_code?>/user/account" target="">
                 <i class="fa fa-home"></i>
                 <span class="title"><?=show_static_text($lang_id,80);?></span>
@@ -163,45 +157,40 @@
                 </div>
             </li>
 
+         
+
+              <li  class="<?php echo $active=='wishlist'?'active':''; ?> " >
+                  <a href="<?=$_user_link.'/trip'?>" target="">
+                  <i class="fa fa-bolt"></i>
+                  <span class="title"> <?=show_static_text($lang_id,142);?></span>
+                  </a>
+              </li>
+
+              <li class="<?php echo $active=='Search Saved'?'active':''; ?>" >
+                  <a href="<?=$_user_link.'/saved_search'?>" target="">
+                  <i class="fa fa-floppy-o"></i>
+                  <span class="title"><?=show_static_text($lang_id,313);?></span>
+                  </a>
+              </li>
+
+              <!--<li class="<?php echo $active=='My Review'?'active':''; ?>" >
+                  <a href="<?=$_user_link.'/review'?>" target="">
+                  <i class="fa fa-star"></i>
+                  <span class="title"><?=show_static_text($lang_id,36);?></span>
+                  </a>
+              </li>-->
 
 
 
+              <!--
+              <li class="<?php echo $active=='Chat'?'class=" active"':'class=""'; ?>" >
+                  <a href="#menu-toggle" id="menu-toggle">
+                  <i class="fa fa-comment-o"></i>
+                  <span class="title"><?=show_static_text($lang_id,105);?></span>
+                  </a>
+              </li>-->
 
-            
-
-<li  class="<?php echo $active=='wishlist'?'class=" active"':'class=""'; ?> " >
-    <a href="<?=$_user_link.'/trip'?>" target="">
-    <i class="fa fa-bolt"></i>
-    <span class="title"> <?=show_static_text($lang_id,142);?></span>
-    </a>
-</li>
-
-
-<li class="<?php echo $active=='Saved Search'?'class=" active"':'class=""'; ?>" >
-    <a href="<?=$_user_link.'/saved_search'?>" target="">
-    <i class="fa fa-floppy-o"></i>
-    <span class="title"><?=show_static_text($lang_id,313);?></span>
-    </a>
-</li>
-
-<li class="<?php echo $active=='My Review'?'class=" active"':'class=""'; ?>" >
-    <a href="<?=$_user_link.'/review'?>" target="">
-    <i class="fa fa-star"></i>
-    <span class="title"><?=show_static_text($lang_id,36);?></span>
-    </a>
-</li>
-
-
-
-<!--
-<li class="<?php echo $active=='Chat'?'class=" active"':'class=""'; ?>" >
-    <a href="#menu-toggle" id="menu-toggle">
-    <i class="fa fa-comment-o"></i>
-    <span class="title"><?=show_static_text($lang_id,105);?></span>
-    </a>
-</li>-->
-
-        </ul>
+          </ul>
 
 
     </div><!-- /.navbar-collapse -->
@@ -212,5 +201,5 @@
     </div>
 
     <!-- Main Content -->
-    
+    </div>
 </div>
