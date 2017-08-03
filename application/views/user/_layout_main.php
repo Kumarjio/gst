@@ -35,7 +35,7 @@
 	color: #fff;
 }
 .user_wrapper .container {
-	min-height: 700px;
+	min-height: 800px;
 }
 </style>
 <?php
